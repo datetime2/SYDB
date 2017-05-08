@@ -11,6 +11,7 @@ namespace SYDB.API
     {
         protected void Application_Start()
         {
+            AutofacConfig.initConfig();
             GlobalConfiguration.Configure(WebApiConfig.Register);
         }
     }
