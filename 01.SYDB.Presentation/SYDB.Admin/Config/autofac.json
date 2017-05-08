@@ -1,0 +1,13 @@
+{
+  "components": [
+    {
+      "type": "SYDB.Plugin.Cache.AspNet.NetCache, SYDB.Plugin.Cache.AspNet",
+      "services": [
+        {
+          "type": "SYDB.Plugin.Cache.ICache, SYDB.Plugin.Cache"
+        }
+      ],
+      "injectProperties": true
+    }
+  ]
+}

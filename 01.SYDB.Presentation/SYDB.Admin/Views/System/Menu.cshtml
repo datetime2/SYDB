@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Shared/_Index.cshtml";
+}
+<script>
+    $(function () {
+        $.moduleIndex.initGrid();
+    });
+    (function ($) {
+        $.moduleIndex = {
+            initGrid: function () {
+                $("#grid").dataGrid({
+                    treeGrid: true,
+                    treeGridModel: "adjacency",
+                    ExpandColumn: "Url",
+                    url: "/System/MenuGrid",
+                    height: $(window).height() - 96,
+                    colModel: [
+                        { label: "主键", name: "Id", hidden: true, key: true },
+                        { label: '名称', name: 'Name', width: 200, align: 'left' },
+                        { label: '操作路径', name: 'Url', width: 260, align: 'left' },
+                        { label: '类型', name: 'MenuType', width: 260, align: 'left' },
+                        {
+                            label: "有效",
+                            name: "IsEnable",
+                            width: 60,
+                            align: "center",
+                            formatter: function (cellvalue) {
+                                return cellvalue ? "<i class=\"fa fa-toggle-on\"></i>" : "<i class=\"fa fa-toggle-off\"></i>";
+                            }
+                        }
+                    ]
+                });
+            },
+            addModule: function () {
+                $.modalOpen({
+                    id: "Form",
+                    title: "新增模块",
+                    url: "/System/MenuForm",
+                    width: "700px",
+                    height: "400px",
+                    callBack: function (iframeId) {
+                        top.frames[iframeId].$.moduleFrom.submitForm();
+                    }
+                });
+            },
+            editModule: function () {
+                var keyValue = $("#grid").jqGridRowValue().Id;
+                if (!keyValue) {
+                    $.UnChecked();
+                    return;
+                }
+                $.modalOpen({
+                    id: "Form",
+                    title: "修改模块",
+                    url: "/System/MInitForm?keyValue=" + keyValue,
+                    width: "700px",
+                    height: "440px",
+                    callBack: function (iframeId) {
+                        top.frames[iframeId].$.moduleFrom.submitForm();
+                    }
+                });
+            },
+            removeModule: function () {
+                if (!$("#grid").jqGridRowValue().Id) {
+                    $.UnChecked();
+                    return;
+                }
+                $.deleteForm({
+                    url: "/System/MenuDel",
+                    param: { keyValue: $("#grid").jqGridRowValue().Id },
+                    success: function () {
+                        $.currentWindow().$("#grid").resetSelection();
+                        $.currentWindow().$("#grid").trigger("reloadGrid");
+                    }
+                });
+            }
+        };
+    })(jQuery);
+</script>
+<div class="topPanel">
+    <div class="toolbar">
+        <div class="btn-group">
+            <a class="btn btn-primary" onclick="$.reload()"><span class="glyphicon glyphicon-refresh"></span></a>
+        </div>
+        <div class="btn-group">
+            <a id="Add" authorize="yes" class="btn btn-primary dropdown-text" onclick="$.moduleIndex.addModule()"><i class="fa fa-plus"></i>新增模块</a>
+        </div>
+        <div class="operate">
+            <ul class="nav nav-pills">
+                <li class="first">已选中<span>1</span>项</li>
+                <li><a id="Edit" authorize="yes" onclick="$.moduleIndex.editModule()"><i class="fa fa-pencil-square-o"></i>修改模块</a></li>
+                <li><a id="Remove" authorize="yes" onclick="$.moduleIndex.removeModule()"><i class="fa fa-trash-o"></i>删除模块</a></li>
+            </ul>
+            <a href="javascript:;" class="close"></a>
+        </div>
+    </div>
+</div>
+<div class="gridPanel">
+    <table id="grid"></table>
+</div>
+

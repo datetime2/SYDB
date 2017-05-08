@@ -1,0 +1,158 @@
+时间：2017-05-08 11:08:02,763 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: 未实现该方法或操作。
+Type: System.NotImplementedException
+StackTrace:    在 SYDB.DAO.AdminDao.GetUserMenus(Int32 id) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.AuthorizeManager.GetAuthUserFromDb(Admin user) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 86
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 143
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException:  
+
+时间：2017-05-08 11:10:58,752 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: 未实现该方法或操作。
+Type: System.NotImplementedException
+StackTrace:    在 SYDB.DAO.AdminDao.GetUserMenus(Int32 id) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.AuthorizeManager.GetAuthUserFromDb(Admin user) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 86
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 143
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException:  
+
+时间：2017-05-08 11:57:36,538 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: 错误信息：实体映射出错。
+错误详情：在将 nvarchar 值 't2.RoleId' 转换成数据类型 int 时失败。
+Type: SqlSugar.SqlSugarException
+StackTrace:    在 SqlSugar.Check.Exception(Boolean isException, String message, String[] args) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Tool\Check.cs:行号 38
+   在 SqlSugar.SqlSugarTool.DataReaderToList[T](Type type, IDataReader dr, String fields, Boolean isClose) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Tool\SqlSugarTool.cs:行号 98
+   在 SqlSugar.QueryableExtensions.ToList[T](Queryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Queryable\QueryableExtensions.cs:行号 894
+   在 SYDB.Infrastructure.ORM.ISugarISugarQueryableExtensions.ToList[T](ISugarQueryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\ISugarQueryableExtensions.cs:行号 950
+   在 SYDB.DAO.MenuDao.<>c__DisplayClass0_0.<GetUserMenus>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\MenuDao.cs:行号 19
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 36
+   在 SYDB.DAO.MenuDao.GetUserMenus(Int32 adminId) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\MenuDao.cs:行号 17
+   在 SYDB.DAO.AuthorizeManager.GetAuthUserFromDb(Admin user) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 89
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 146
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException:  
+
+时间：2017-05-08 12:00:05,100 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: 错误信息：实体映射出错。
+错误详情：在将 nvarchar 值 't2.RoleId' 转换成数据类型 int 时失败。
+Type: SqlSugar.SqlSugarException
+StackTrace:    在 SqlSugar.Check.Exception(Boolean isException, String message, String[] args) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Tool\Check.cs:行号 38
+   在 SqlSugar.SqlSugarTool.DataReaderToList[T](Type type, IDataReader dr, String fields, Boolean isClose) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Tool\SqlSugarTool.cs:行号 98
+   在 SqlSugar.QueryableExtensions.ToList[T](Queryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Queryable\QueryableExtensions.cs:行号 894
+   在 SYDB.Infrastructure.ORM.ISugarISugarQueryableExtensions.ToList[T](ISugarQueryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\ISugarQueryableExtensions.cs:行号 950
+   在 SYDB.DAO.MenuDao.<>c__DisplayClass0_0.<GetUserMenus>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\MenuDao.cs:行号 19
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 36
+   在 SYDB.DAO.MenuDao.GetUserMenus(Int32 adminId) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\MenuDao.cs:行号 17
+   在 SYDB.DAO.AuthorizeManager.GetAuthUserFromDb(Admin user) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 89
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 146
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException:  
+
+时间：2017-05-08 12:01:59,356 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: “SYDB.Plugin.Cache.Cache”的类型初始值设定项引发异常。
+Type: System.TypeInitializationException
+StackTrace:    在 SYDB.Plugin.Cache.Cache.Set(String key, Object value, Int32 minutes)
+   在 SYDB.DAO.AuthorizeManager.SetCacheAuthUser(String authToken, UserForAuthorize authUser) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 51
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 149
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException: Message: 未能加载文件或程序集“Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+	Type: System.IO.FileLoadException
+	StackTrace:    在 Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+	   在 Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+	   在 Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+	   在 Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+	   在 SYDB.Plugin.Cache.Cache.Load() 位置 D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache\Cache.cs:行号 75
+	   在 SYDB.Plugin.Cache.Cache..cctor() 位置 D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache\Cache.cs:行号 15
+	InnerException:  
+
+时间：2017-05-08 12:02:39,849 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: “SYDB.Plugin.Cache.Cache”的类型初始值设定项引发异常。
+Type: System.TypeInitializationException
+StackTrace:    在 SYDB.Plugin.Cache.Cache.Set(String key, Object value, Int32 minutes)
+   在 SYDB.DAO.AuthorizeManager.SetCacheAuthUser(String authToken, UserForAuthorize authUser) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 51
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 149
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException: Message: 未能加载文件或程序集“Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+	Type: System.IO.FileLoadException
+	StackTrace:    在 Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+	   在 Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+	   在 Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+	   在 Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+	   在 SYDB.Plugin.Cache.Cache.Load() 位置 D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache\Cache.cs:行号 75
+	   在 SYDB.Plugin.Cache.Cache..cctor() 位置 D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache\Cache.cs:行号 15
+	InnerException:  
+
+时间：2017-05-08 12:03:29,609 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: “SYDB.Plugin.Cache.Cache”的类型初始值设定项引发异常。
+Type: System.TypeInitializationException
+StackTrace:    在 SYDB.Plugin.Cache.Cache.Set(String key, Object value, Int32 minutes)
+   在 SYDB.DAO.AuthorizeManager.SetCacheAuthUser(String authToken, UserForAuthorize authUser) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 51
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 149
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException: Message: 未能加载文件或程序集“Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+	Type: System.IO.FileLoadException
+	StackTrace:    在 Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider.Load(Stream stream)
+	   在 Microsoft.Extensions.Configuration.FileConfigurationProvider.Load(Boolean reload)
+	   在 Microsoft.Extensions.Configuration.ConfigurationRoot..ctor(IList`1 providers)
+	   在 Microsoft.Extensions.Configuration.ConfigurationBuilder.Build()
+	   在 SYDB.Plugin.Cache.Cache.Load() 位置 D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache\Cache.cs:行号 75
+	   在 SYDB.Plugin.Cache.Cache..cctor() 位置 D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache\Cache.cs:行号 15
+	InnerException:  
+
+时间：2017-05-08 12:05:42,984 
+级别：ERROR 
+类名：SYDB.Admin.Controllers.LoginController.Singin  
+描述：Message: 未能加载文件或程序集“Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed”或它的某一个依赖项。找到的程序集清单定义与程序集引用不匹配。 (异常来自 HRESULT:0x80131040)
+Type: System.IO.FileLoadException
+StackTrace:    在 SqlSugar.SqlHelper.ExecLogEvent(String sql, SqlParameter[] pars, Boolean isStarting)
+   在 SqlSugar.SqlHelper.GetReader(String sql, SqlParameter[] pars) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Base\SqlHelper.cs:行号 316
+   在 SqlSugar.QueryableExtensions.ToList[T](Queryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Queryable\QueryableExtensions.cs:行号 889
+   在 SqlSugar.QueryableExtensions.Single[T](Queryable`1 queryable, Expression`1 expression) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Queryable\QueryableExtensions.cs:行号 430
+   在 SYDB.Infrastructure.ORM.ISugarISugarQueryableExtensions.Single[T](ISugarQueryable`1 queryable, Expression`1 expression) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\ISugarQueryableExtensions.cs:行号 464
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass2_0.<Login>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 34
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 29
+   在 SYDB.DAO.AdminDao.Login(String loginName, String password, Boolean updateLoginToken) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 32
+   在 SYDB.DAO.AuthorizeManager.SignIn(String loginName, String password, Boolean rememberMe) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AuthorizeManager.cs:行号 145
+   在 SYDB.Admin.Controllers.LoginController.Singin(String LoginName, String PassWord, String Code, Nullable`1 rememberMe) 位置 D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.Admin\Controllers\LoginController.cs:行号 33
+InnerException:  
+
+时间：2017-05-08 16:36:57,554 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SqlSugar.SqlSugarException: 错误信息          ： 【SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。】
+ORM生成的Sql ： 【insert into [Menu] ([ParentId],[Name],[Url],[Icon],[MenuType],[DocumetId],[SortOrder],[IsEnable],[CreateTime],[ModifyTime] ) values(@ParentId,@Name,@Url,@Icon,@MenuType,@DocumetId,@SortOrder,@IsEnable,@CreateTime,@ModifyTime);select SCOPE_IDENTITY();】
+函数参数         ： 【{"Id":0,"ParentId":0,"Name":"会员管理","Url":null,"Icon":"fa fa-gears","MenuType":0,"DocumetId":null,"SortOrder":3,"IsEnable":false,"CreateTime":"0001-01-01T00:00:00","ModifyTime":null}】
+
+   在 SqlSugar.SqlSugarClient.Insert[T](T entity, Boolean isIdentity) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\SqlSugarClient.cs:行号 742
+   在 SYDB.Infrastructure.ORM.SqlServerSugarClient.Insert[T](T entity, Boolean isIdentity) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Append\SqlServerSugarClient.cs:行号 410
+   在 SYDB.DAO.MenuDao.<>c__DisplayClass3_0.<SubmitForm>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\MenuDao.cs:行号 80
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 24
+时间：2017-05-08 16:38:52,098 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SqlSugar.SqlSugarException: 错误信息          ： 【SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。】
+ORM生成的Sql ： 【insert into [Menu] ([ParentId],[Name],[Url],[Icon],[MenuType],[DocumetId],[SortOrder],[IsEnable],[CreateTime],[ModifyTime] ) values(@ParentId,@Name,@Url,@Icon,@MenuType,@DocumetId,@SortOrder,@IsEnable,@CreateTime,@ModifyTime);select SCOPE_IDENTITY();】
+函数参数         ： 【{"Id":0,"ParentId":0,"Name":"会员管理","Url":null,"Icon":"fa fa-gears","MenuType":0,"DocumetId":null,"SortOrder":3,"IsEnable":false,"CreateTime":"0001-01-01T00:00:00","ModifyTime":null}】
+
+   在 SqlSugar.SqlSugarClient.Insert[T](T entity, Boolean isIdentity) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\SqlSugarClient.cs:行号 742
+   在 SYDB.Infrastructure.ORM.SqlServerSugarClient.Insert[T](T entity, Boolean isIdentity) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Append\SqlServerSugarClient.cs:行号 410
+   在 SYDB.DAO.MenuDao.<>c__DisplayClass3_0.<SubmitForm>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\MenuDao.cs:行号 80
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 24

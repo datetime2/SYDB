@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39138FC2-DF7A-4A46-9BB1-8A98C1B54F57}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SYDB.DAO</RootNamespace>
+    <AssemblyName>SYDB.DAO</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDao.cs" />
+    <Compile Include="AuthorizeManager.cs" />
+    <Compile Include="Base\BaseDao.cs" />
+    <Compile Include="Base\DBContext.cs" />
+    <Compile Include="GameBetDao.cs" />
+    <Compile Include="GameDao.cs" />
+    <Compile Include="MenuDao.cs" />
+    <Compile Include="RoleDao.cs" />
+    <Compile Include="SysConfigDao.cs" />
+    <Compile Include="UserDao.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\SYDB.Infrastructure.Authorize.csproj">
+      <Project>{55DF688A-192A-45CB-B612-6DDD536FF3E8}</Project>
+      <Name>SYDB.Infrastructure.Authorize</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.SYDB.Infrastructure\SYDB.Infrastructure.Entity\SYDB.Infrastructure.Entity.csproj">
+      <Project>{22d468cd-37f5-45a6-b1f8-0a900765759c}</Project>
+      <Name>SYDB.Infrastructure.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\SYDB.Infrastructure.ORM.csproj">
+      <Project>{99AA534E-4287-4F12-9871-B366FBCB85CD}</Project>
+      <Name>SYDB.Infrastructure.ORM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03.SYDB.Infrastructure\SYDB.Infrastructure.Utility\SYDB.Infrastructure.Utility.csproj">
+      <Project>{d0500657-8a2c-4732-b6d6-74dfc930a50a}</Project>
+      <Name>SYDB.Infrastructure.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\04.SYDB.Plugins\SYDB.Plugin.Cache\SYDB.Plugin.Cache.csproj">
+      <Project>{03014F27-533B-4EAB-85E5-80B8FFBB9137}</Project>
+      <Name>SYDB.Plugin.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SYDB.IDAO\SYDB.IDAO.csproj">
+      <Project>{7647dd05-16e7-4f64-aded-ce53766300a8}</Project>
+      <Name>SYDB.IDAO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\SYDB.Infrastructure.Authorize.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\SYDB.Infrastructure.Authorize.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\System.Web.Mvc.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\System.Web.Mvc.xml
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\obj\Debug\SYDB.Infrastructure.Authorize.csprojResolveAssemblyReference.cache
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\obj\Debug\SYDB.Infrastructure.Authorize.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\obj\Debug\SYDB.Infrastructure.Authorize.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\SYDB.Infrastructure.Entity.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Authorize\bin\Debug\SYDB.Infrastructure.Entity.pdb

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99AA534E-4287-4F12-9871-B366FBCB85CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SYDB.Infrastructure.ORM</RootNamespace>
+    <AssemblyName>SYDB.Infrastructure.ORM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbRepository.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="IClassGenerating.cs" />
+    <Compile Include="ISqlable.cs" />
+    <Compile Include="ISqlSugarClient.cs" />
+    <Compile Include="ISugarQueryable.cs" />
+    <Compile Include="ISugarQueryableExtensions.cs" />
+    <Compile Include="Models\CacheManager.cs" />
+    <Compile Include="Models\Check.cs" />
+    <Compile Include="Models\ConnectionConfig.cs" />
+    <Compile Include="Models\DbType.cs" />
+    <Compile Include="Models\InternalConst.cs" />
+    <Compile Include="Models\KeyValue.cs" />
+    <Compile Include="Models\PubConvert.cs" />
+    <Compile Include="Models\PubEnum.cs" />
+    <Compile Include="Models\SerialNumber.cs" />
+    <Compile Include="Models\SqlSugarRepositoryException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sqlbuilder.cs" />
+    <Compile Include="SqlbuilderExtensions.cs" />
+    <Compile Include="Sugar\MySql\Append\MySqlClassGenerating.cs" />
+    <Compile Include="Sugar\MySql\Append\MySqlQueryable.cs" />
+    <Compile Include="Sugar\MySql\Append\MySqlSqlable.cs" />
+    <Compile Include="Sugar\MySql\Append\MySqlSugarClient.cs" />
+    <Compile Include="Sugar\MySql\Base\SqlHelper.cs" />
+    <Compile Include="Sugar\MySql\Cloud\CloudModels.cs" />
+    <Compile Include="Sugar\MySql\Cloud\CloudPubMethod.cs" />
+    <Compile Include="Sugar\MySql\Cloud\TaskExtensions.cs" />
+    <Compile Include="Sugar\MySql\Core\IDataReaderEntityBuilder.cs" />
+    <Compile Include="Sugar\MySql\Core\IDataRecordExtensions.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\Constant.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\Expressions.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\Main.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\Method.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\Models.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\Property.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\ResolveFieldName.cs" />
+    <Compile Include="Sugar\MySql\Core\ResolveExpress\ResolveSelect.cs" />
+    <Compile Include="Sugar\MySql\Generating\ClassGenerating.cs" />
+    <Compile Include="Sugar\MySql\Generating\ClassTemplate.cs" />
+    <Compile Include="Sugar\MySql\Generating\SugarAttribute.cs" />
+    <Compile Include="Sugar\MySql\PubModel\KeyValue.cs" />
+    <Compile Include="Sugar\MySql\PubModel\PubEnum.cs" />
+    <Compile Include="Sugar\MySql\PubModel\PubModel.cs" />
+    <Compile Include="Sugar\MySql\Queryable\Queryable.cs" />
+    <Compile Include="Sugar\MySql\Queryable\QueryableExtensions.cs" />
+    <Compile Include="Sugar\MySql\Sqlable\Sqlable.cs" />
+    <Compile Include="Sugar\MySql\Sqlable\SqlableExtensions.cs" />
+    <Compile Include="Sugar\MySql\SqlSugarClient.cs" />
+    <Compile Include="Sugar\MySql\Tool\CacheManager.cs" />
+    <Compile Include="Sugar\MySql\Tool\Check.cs" />
+    <Compile Include="Sugar\MySql\Tool\FileSugar.cs" />
+    <Compile Include="Sugar\MySql\Tool\IEnumerableExtensions.cs" />
+    <Compile Include="Sugar\MySql\Tool\IStorageObject.cs" />
+    <Compile Include="Sugar\MySql\Tool\IsWhatExtensions.cs" />
+    <Compile Include="Sugar\MySql\Tool\LanguageHelper.cs" />
+    <Compile Include="Sugar\MySql\Tool\PubConvert.cs" />
+    <Compile Include="Sugar\MySql\Tool\SqlException.cs" />
+    <Compile Include="Sugar\MySql\Tool\SqlSugarTool.cs" />
+    <Compile Include="Sugar\MySql\Tool\SqlSugarToolCoreDiff.cs" />
+    <Compile Include="Sugar\MySql\Tool\SqlSugarToolExtensions.cs" />
+    <Compile Include="Sugar\MySql\Tool\SqlSugarToolWithSqlMethod.cs" />
+    <Compile Include="Sugar\SqlServer\Append\SqlServerClassGenerating.cs" />
+    <Compile Include="Sugar\SqlServer\Append\SqlServerQueryable.cs" />
+    <Compile Include="Sugar\SqlServer\Append\SqlServerSqlable.cs" />
+    <Compile Include="Sugar\SqlServer\Append\SqlServerSugarClient.cs" />
+    <Compile Include="Sugar\SqlServer\Base\SqlHelper.cs" />
+    <Compile Include="Sugar\SqlServer\Cloud\CloudModels.cs" />
+    <Compile Include="Sugar\SqlServer\Cloud\CloudPubMethod.cs" />
+    <Compile Include="Sugar\SqlServer\Cloud\TaskExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\Core\IDataReaderEntityBuilder.cs" />
+    <Compile Include="Sugar\SqlServer\Core\IDataRecordExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\Constant.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\Expressions.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\Main.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\Method.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\Models.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\Property.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\ResolveFieldName.cs" />
+    <Compile Include="Sugar\SqlServer\Core\ResolveExpress\ResolveSelect.cs" />
+    <Compile Include="Sugar\SqlServer\Generating\ClassGenerating.cs" />
+    <Compile Include="Sugar\SqlServer\Generating\ClassTemplate.cs" />
+    <Compile Include="Sugar\SqlServer\Generating\SugarAttribute.cs" />
+    <Compile Include="Sugar\SqlServer\PubModel\KeyValue.cs" />
+    <Compile Include="Sugar\SqlServer\PubModel\PubEnum.cs" />
+    <Compile Include="Sugar\SqlServer\PubModel\PubModel.cs" />
+    <Compile Include="Sugar\SqlServer\Queryable\Queryable.cs" />
+    <Compile Include="Sugar\SqlServer\Queryable\QueryableExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\Sqlable\Sqlable.cs" />
+    <Compile Include="Sugar\SqlServer\Sqlable\SqlableExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\SqlSugarClient.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\CacheManager.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\Check.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\FileSugar.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\IEnumerableExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\IStorageObject.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\IsWhatExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\LanguageHelper.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\PubConvert.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\SqlException.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\SqlSugarTool.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\SqlSugarToolCoreDiff.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\SqlSugarToolExtensions.cs" />
+    <Compile Include="Sugar\SqlServer\Tool\SqlSugarToolWithSqlMethod.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
