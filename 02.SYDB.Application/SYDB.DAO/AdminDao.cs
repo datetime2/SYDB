@@ -80,10 +80,7 @@ namespace SYDB.DAO
                 var user = db.Queryable<Admin>().Single(x => x.Id.Equals(id));
                 if (user == null)
                     throw new ArgumentException(id.ToString(), "id");
-                user.LastLoginToken = loginToken;
-                user.LastLoginTime = lastLoginTime;
-                user.LastLoginIp = "127.0.0.1";
-                db.Update(user);
+                db.Update<Admin>(new { LastLoginToken = loginToken, LastLoginTime = lastLoginTime, LastLoginIp = "127.0.0.1" }, s => s.Id == user.Id);
             });
         }
 
