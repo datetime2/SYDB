@@ -8,5 +8,9 @@ namespace SYDB.Admin.Controllers
 {
     public class UserController : BaseAuthorizeController
     {
+        public ActionResult Cash()
+        {
+            return View();
+        }
     }
 }
