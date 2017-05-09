@@ -8,7 +8,7 @@
         public string Url { get; set; }
         public string Icon { get; set; }
         public bool IsEnable { get; set; }
-        public string DocumetId { get; set; }
+        public string DocumentId { get; set; }
         public string MenuType { get; set; }
         public int SortOrder { get; set; }
     }

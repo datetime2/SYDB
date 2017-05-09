@@ -6,6 +6,7 @@
 <script>
     var keyValue = $.request("keyValue");
     $(function () {
+        $("#DocumentId").attr("disabled", true);
         $.moduleFrom.initControl();
         if (!!keyValue) {
             $.moduleFrom.initForm();
@@ -17,13 +18,23 @@
                 $("#ParentId").bindSelect({
                     url: "/Menu/MenuTree",
                     change: function(data) {
-                        if (data.parentId !== 0) {
+                        if (data.parentId !== 0 || data.MenuType==0) {
                             $("#Url").attr('disabled', false);
-                            $("#Icon").attr('disabled', false);
+                            //$("#Icon").attr('disabled', false);
+                            $("#DocumentId").attr("disabled", true);
                         } else {
                             $("#Url").attr('disabled', true);
-                            $("#Icon").attr('disabled', true);
+                            //$("#Icon").attr('disabled', true);
+                            $("#DocumentId").attr("disabled", false);
                         }
+                    }
+                });
+                $("#MenuType").on("change", function () {
+                    if ($(this).val() == 0) {
+                        $("#DocumentId").attr("disabled", true);
+                    }
+                    else {
+                        $("#DocumentId").attr("disabled", false);
                     }
                 });
             },
@@ -104,10 +115,14 @@
                 </tr>
                 <tr>
                     <th class="formTitle" style="height: 35px;">有效</th>
-                    <td class="formValue" style="padding-top: 1px;" colspan="3">
+                    <td class="formValue" style="padding-top: 1px;">
                         <div class="ckbox">
                             <input id="IsEnable" name="IsEnable" type="checkbox" checked="checked"><label for="IsEnable">有效</label>
                         </div>
+                    </td>
+                    <th class="formTitle">元素编号</th>
+                    <td class="formValue">
+                        <input id="DocumentId" name="DocumentId" type="text" class="form-control" />
                     </td>
                 </tr>
             </table>

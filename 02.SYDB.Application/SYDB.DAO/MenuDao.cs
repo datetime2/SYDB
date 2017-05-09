@@ -102,7 +102,7 @@ namespace SYDB.DAO
                     Icon = item.Icon,
                     Name = item.Name,
                     IsEnable = item.IsEnable,
-                    DocumetId = item.DocumetId,
+                    DocumentId = item.DocumentId,
                     MenuType = item.MenuType.ToDescription(),
                     SortOrder = item.SortOrder
                 });

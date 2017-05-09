@@ -17,7 +17,7 @@ namespace SYDB.Infrastructure.Entity
         public string Url { get; set; }
         public string Icon { get; set; }
         public MenuType MenuType { get; set; }
-        public string DocumetId { get; set; }
+        public string DocumentId { get; set; }
         public int SortOrder { get; set; }
     }
 }
