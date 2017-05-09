@@ -5,7 +5,7 @@ namespace SYDB.Admin.Controllers
 {
     public class HomeController : BaseAuthorizeController
     {
-        public override ActionResult Index()
+        public override ActionResult Index(int?menuId)
         {
             var menus = GetCurrentUser() == null ? new List<MenuForAuthorize>() : GetCurrentUser().Menus;
             return View(menus);

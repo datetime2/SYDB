@@ -7,11 +7,11 @@ namespace SYDB.Admin
 {
     public static partial class HtmlHelperExtend
     {
-        public static MvcHtmlString ButtonForUser(this HtmlHelper htmlHelper, List<ButtonForAuthorize> models, string btnClassName = "")
+        public static MvcHtmlString ButtonForUser(this HtmlHelper htmlHelper, List<ButtonForAuthorize> buttons, int? MenuId = 0)
         {
-            string btnClass = string.IsNullOrEmpty(btnClassName) ? "btn btn-default dropdown-text" : btnClassName;
+            string btnClass = "btn btn-default dropdown-text";
             StringBuilder sb = new StringBuilder("<div class='btn-group'>");
-            foreach (var btn in models)
+            foreach (var btn in buttons)
             {
                 sb.AppendFormat("<a id=\"{0}\" class=\"{1}\" onclick=\"{2}\"><i class=\"{3}\"></i>{4}</a>", btn.ButtonId, btnClass ?? btn.ButtonClass, btn.ButtonEvent, btn.ButtonIcon, btn.ButtonName);
             }
