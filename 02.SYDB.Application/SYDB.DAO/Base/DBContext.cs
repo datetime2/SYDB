@@ -30,6 +30,31 @@ namespace SYDB.DAO
                 return false;
             }
         }
+        public static bool DbTran(Func<ISqlSugarClient, bool> function)
+        {
+            try
+            {
+                using (var db = GetInstance())
+                {
+                    db.BeginTran();
+                    try
+                    {
+                        db.CommitTran();
+                        return function(db);
+                    }
+                    catch (Exception ex)
+                    {
+                        db.RollbackTran();
+                        throw ex;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Log.Error("DBContext.DbTran", ex);
+                return false;
+            }
+        }
         public static int DbFunction(Func<ISqlSugarClient, int> function)
         {
             try

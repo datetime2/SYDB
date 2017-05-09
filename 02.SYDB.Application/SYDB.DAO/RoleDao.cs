@@ -112,12 +112,19 @@ namespace SYDB.DAO
             return tree;
         }
 
-        public bool SubmitForm(Role role, int? keyValue, string menuIds)
+        public bool SubmitForm(Role role, int? keyValue, IEnumerable<int> menuIds)
         {
-            return DbFunction((db) =>
+            return DbTran((db) =>
             {
                 if (keyValue.HasValue)
                 {
+                    db.Delete<RoleMenu>(s => s.RoleId == keyValue);
+                    db.InsertRange(menuIds.Select(s => new RoleMenu
+                    {
+                        RoleId = keyValue.Value,
+                        MenuId = s
+                    }).ToList());
+                    db.DisableUpdateColumns = new string[] { "CreateTime"};
                     role.Id = keyValue.Value;
                     role.ModifyTime = DateTime.Now;
                     return db.Update(role);
@@ -125,7 +132,13 @@ namespace SYDB.DAO
                 else
                 {
                     role.CreateTime = DateTime.Now;
-                    return db.Insert(role) != null;
+                    var insert = db.Insert(role);
+                    db.InsertRange(menuIds.Select(s => new RoleMenu
+                    {
+                        RoleId = insert.ToInt(),
+                        MenuId = s
+                    }).ToList());
+                    return true;
                 }
             });
         }

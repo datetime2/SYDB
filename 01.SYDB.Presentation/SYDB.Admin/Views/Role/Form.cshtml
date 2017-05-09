@@ -54,7 +54,7 @@
             return;
         }
         postData["menuIds"] = menus;
-        postdata["IsEnable"] = $("input[name='IsEnable']:checked").val() == "on" ? true : false;
+        postData["IsEnable"] = $("input[name='IsEnable']:checked").val() == "on" ? true : false;
         $.submitForm({
             url: "/Role/submitForm?keyValue=" + keyValue,
             param: postData,

@@ -29,9 +29,9 @@ namespace SYDB.Admin.Controllers
             return Json(role, JsonRequestBehavior.AllowGet);
         }
         [HttpPost]
-        public JsonResult SubmitForm(Role role, int? keyValue,string menuIds)
+        public JsonResult SubmitForm(Role role, int? keyValue, string menuIds)
         {
-            return RoleDao.SubmitForm(role, keyValue, menuIds) ? Success("操作成功") : Error("操作失败");
+            return RoleDao.SubmitForm(role, keyValue, menuIds.Split(',').Select(int.Parse)) ? Success("操作成功") : Error("操作失败");
         }
         [HttpPost]
         public JsonResult Remove(int? keyValue)

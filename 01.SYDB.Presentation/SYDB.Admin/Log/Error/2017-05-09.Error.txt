@@ -1,89 +1,11 @@
-时间：2017-05-09 13:37:31,199 
+时间：2017-05-09 18:40:41,350 
 级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
+类名：SYDB.DAO.DBContext`1[T].DbTran  
+描述：DBContext.DbTran 
 
-System.Data.SqlClient.SqlException (0x80131904): 无法绑定由多个部分组成的标识符 "s1.Id"。
-无法绑定由多个部分组成的标识符 "s2.Name"。
-无法绑定由多个部分组成的标识符 "s1.LoginName"。
-无法绑定由多个部分组成的标识符 "s1.LastLoginIp"。
-无法绑定由多个部分组成的标识符 "s1.LastLoginTime"。
-无法绑定由多个部分组成的标识符 "s1.LastLoginToken"。
-无法绑定由多个部分组成的标识符 "s1.IsEnable"。
-无法绑定由多个部分组成的标识符 "s1.CreateTime"。
-无法绑定由多个部分组成的标识符 "s1.ModifyTime"。
-无法绑定由多个部分组成的标识符 "s2.Id"。
-   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
-   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
-   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
-   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
-   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
-   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
-   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
-   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
-   在 System.Data.SqlClient.SqlCommand.ExecuteReader()
-   在 SqlSugar.SqlHelper.GetReader(String sql, SqlParameter[] pars) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Base\SqlHelper.cs:行号 330
-   在 SqlSugar.QueryableExtensions.ToList[T](Queryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\Sugar\SqlServer\Queryable\QueryableExtensions.cs:行号 888
-   在 SYDB.Infrastructure.ORM.ISugarISugarQueryableExtensions.ToList[T](ISugarQueryable`1 queryable) 位置 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\ISugarQueryableExtensions.cs:行号 950
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass7_0.<InitGrid>b__1(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 117
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 func, Object def) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 84
-ClientConnectionId:7a0ba35c-08e1-4b06-a82a-a88fb2180d49
-Error Number:4104,State:1,Class:16
-时间：2017-05-09 17:35:17,703 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
+SqlSugar.SqlSugarException: 错误信息          ： 【不能将值 NULL 插入列 'CreateTime'，表 'SYDB.dbo.Role'；列不允许有 Null 值。UPDATE 失败。
+语句已终止。】
+ORM生成的Sql ： 【 UPDATE [Role] SET  [Name]=@Name  , [Remark]=@Remark  , [SortOrder]=@SortOrder  , [IsEnable]=@IsEnable  , [CreateTime]=@CreateTime  , [ModifyTime]=@ModifyTime  WHERE [Id] = @Id】
+函数参数         ： 【{"rowObj":{"Id":100002,"Name":"111","Remark":null,"SortOrder":111,"IsEnable":true,"CreateTime":"\/Date(-62135596800000)\/","ModifyTime":"\/Date(1494326441344)\/"},"whereIn":[]}】
 
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
-时间：2017-05-09 17:35:17,720 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
-
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
-时间：2017-05-09 17:35:17,809 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
-
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
-时间：2017-05-09 17:35:21,352 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
-
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
-时间：2017-05-09 17:35:21,356 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
-
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
-时间：2017-05-09 17:35:21,359 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
-
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
-时间：2017-05-09 17:35:21,364 
-级别：ERROR 
-类名：SYDB.DAO.DBContext`1[T].DbFunction  
-描述：DBContext.DbFunction 
-
-SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
-   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
-   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+   在 SYDB.DAO.DBContext`1.DbTran(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 48
