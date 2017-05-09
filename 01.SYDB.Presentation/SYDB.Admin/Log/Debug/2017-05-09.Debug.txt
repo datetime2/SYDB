@@ -1,0 +1,2245 @@
+时间：2017-05-09 19:00:28,191 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([LoginName] = @LoginName101)    
+
+时间：2017-05-09 19:00:28,211 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@LoginName101","value":"admin"}] 
+
+时间：2017-05-09 19:00:28,212 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:28,269 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([Id] = @Id101)    
+
+时间：2017-05-09 19:00:28,270 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:28,272 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:28,464 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql: UPDATE [Admin] SET  [LastLoginToken]=@LastLoginToken, [LastLoginTime]=@LastLoginTime, [LastLoginIp]=@LastLoginIp WHERE  1=1   AND  ([Id]  = @Id1)   
+
+时间：2017-05-09 19:00:28,465 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id1","value":"2"},{"key":"@LastLoginToken","value":"m94x0gt73tescnqjv5v2biv2"},{"key":"@LastLoginTime","value":"2017/5/9 19:00:28"},{"key":"@LastLoginIp","value":"127.0.0.1"}] 
+
+时间：2017-05-09 19:00:28,466 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:28,504 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT T1.*  FROM [Menu]   t1  Inner JOIN [RoleMenu]  t2  ON  ( t1.Id  = t2.MenuId )    Inner JOIN [Admin]  t3  ON  ( t2.RoleId  = t3.RoleId )    WHERE 1=1  AND  ([t3].[Id]  = @t3_Id301)     
+
+时间：2017-05-09 19:00:28,505 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@t3_Id301","value":"2"}] 
+
+时间：2017-05-09 19:00:28,506 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:29,196 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:29,197 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:29,200 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:29,212 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:29,213 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:29,213 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:29,215 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:29,215 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:29,216 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:29,227 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:29,228 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:29,228 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:29,232 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:29,232 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:29,233 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:29,234 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:29,235 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:29,236 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:30,965 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:30,965 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:30,966 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:30,967 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:30,968 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:30,969 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:30,971 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:30,972 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:30,972 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:30,973 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:30,974 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:00:30,975 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:55,774 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([LoginName] = @LoginName101)    
+
+时间：2017-05-09 19:00:55,775 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@LoginName101","value":"test"}] 
+
+时间：2017-05-09 19:00:55,776 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:55,777 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([Id] = @Id101)    
+
+时间：2017-05-09 19:00:55,778 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:55,779 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:55,781 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql: UPDATE [Admin] SET  [LastLoginToken]=@LastLoginToken, [LastLoginTime]=@LastLoginTime, [LastLoginIp]=@LastLoginIp WHERE  1=1   AND  ([Id]  = @Id1)   
+
+时间：2017-05-09 19:00:55,782 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id1","value":"3"},{"key":"@LastLoginToken","value":"r55oxerlyawjro8uhcrmy511"},{"key":"@LastLoginTime","value":"2017/5/9 19:00:55"},{"key":"@LastLoginIp","value":"127.0.0.1"}] 
+
+时间：2017-05-09 19:00:55,783 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:55,787 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT T1.*  FROM [Menu]   t1  Inner JOIN [RoleMenu]  t2  ON  ( t1.Id  = t2.MenuId )    Inner JOIN [Admin]  t3  ON  ( t2.RoleId  = t3.RoleId )    WHERE 1=1  AND  ([t3].[Id]  = @t3_Id301)     
+
+时间：2017-05-09 19:00:55,788 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@t3_Id301","value":"3"}] 
+
+时间：2017-05-09 19:00:55,789 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,301 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,303 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,304 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,306 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,307 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,308 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,310 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,310 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,311 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,313 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,313 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,314 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,316 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,317 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,317 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,319 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,319 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,320 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,415 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,416 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,417 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,419 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,419 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,420 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,422 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,423 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,424 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:00:56,426 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:00:56,428 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:00:56,429 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:09,088 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:09,089 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:09,090 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:09,091 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:09,092 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:09,093 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:09,095 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:09,096 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:09,097 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:09,098 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:09,099 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:09,100 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:14,084 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:14,084 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:14,086 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:14,088 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:14,089 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:14,089 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:14,091 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:14,091 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:14,092 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:14,094 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:14,095 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:14,096 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:14,174 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT * ,row_index=ROW_NUMBER() OVER(ORDER BY [SortOrder] ASC ) FROM [Menu]   WHERE 1=1  AND (1=1)    
+
+时间：2017-05-09 19:01:14,175 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,564 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,565 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,566 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,568 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,569 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,570 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,571 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,571 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,572 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,574 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,575 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,575 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,904 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,905 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,906 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,908 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,909 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,910 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,911 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,912 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,912 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,914 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:16,914 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:16,915 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,928 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT COUNT(1)  FROM [Role]   WHERE 1=1  AND (1=1)    
+
+时间：2017-05-09 19:01:16,930 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:16,936 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT * FROM ( SELECT * ,row_index=ROW_NUMBER() OVER(ORDER BY [Id] ASC ) FROM [Role]   WHERE 1=1  AND (1=1)   ) t WHERE t.row_index BETWEEN 1 AND 50 
+
+时间：2017-05-09 19:01:16,937 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,414 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,415 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,416 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,417 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,418 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,419 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,420 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,421 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,422 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,424 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,425 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,426 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,552 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,552 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,553 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,554 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,555 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,555 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,557 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,557 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,558 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,560 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:20,562 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:20,563 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:20,567 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Menu]   WHERE 1=1  AND (IsEnable=1)    
+
+时间：2017-05-09 19:01:20,568 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,200 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,201 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,202 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,203 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,204 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,206 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,207 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,208 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,208 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,209 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,210 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,211 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,277 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,278 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,278 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,279 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,280 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,281 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,282 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,283 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,283 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,285 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:24,285 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:24,286 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:24,287 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Menu]   WHERE 1=1  AND (IsEnable=1)    
+
+时间：2017-05-09 19:01:24,288 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:35,751 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([LoginName] = @LoginName101)    
+
+时间：2017-05-09 19:01:35,751 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@LoginName101","value":"admin"}] 
+
+时间：2017-05-09 19:01:35,752 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:35,754 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([Id] = @Id101)    
+
+时间：2017-05-09 19:01:35,755 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:35,756 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:35,757 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql: UPDATE [Admin] SET  [LastLoginToken]=@LastLoginToken, [LastLoginTime]=@LastLoginTime, [LastLoginIp]=@LastLoginIp WHERE  1=1   AND  ([Id]  = @Id1)   
+
+时间：2017-05-09 19:01:35,758 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id1","value":"2"},{"key":"@LastLoginToken","value":"ecv5aggtp3kc3k4cqq267l56"},{"key":"@LastLoginTime","value":"2017/5/9 19:01:35"},{"key":"@LastLoginIp","value":"127.0.0.1"}] 
+
+时间：2017-05-09 19:01:35,759 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:35,770 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT T1.*  FROM [Menu]   t1  Inner JOIN [RoleMenu]  t2  ON  ( t1.Id  = t2.MenuId )    Inner JOIN [Admin]  t3  ON  ( t2.RoleId  = t3.RoleId )    WHERE 1=1  AND  ([t3].[Id]  = @t3_Id301)     
+
+时间：2017-05-09 19:01:35,771 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@t3_Id301","value":"2"}] 
+
+时间：2017-05-09 19:01:35,771 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,285 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,285 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,287 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,290 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,292 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,295 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,296 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,297 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,298 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,299 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,300 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,300 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,301 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,302 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,303 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,304 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,304 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,305 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,375 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,376 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,377 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,379 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,379 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,380 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,381 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,382 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,382 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:36,384 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:36,385 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:36,386 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,095 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,096 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,098 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,100 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,100 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,101 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,102 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,103 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,104 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,106 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,107 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,107 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,231 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,232 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,233 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,234 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,235 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,235 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,237 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,237 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,238 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,240 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:40,241 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:40,241 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,243 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT COUNT(1)  FROM [Role]   WHERE 1=1  AND (1=1)    
+
+时间：2017-05-09 19:01:40,244 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:40,247 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT * FROM ( SELECT * ,row_index=ROW_NUMBER() OVER(ORDER BY [Id] ASC ) FROM [Role]   WHERE 1=1  AND (1=1)   ) t WHERE t.row_index BETWEEN 1 AND 50 
+
+时间：2017-05-09 19:01:40,248 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:42,982 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:42,983 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:42,984 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:42,985 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:42,986 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:42,986 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:42,987 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:42,988 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:42,988 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:42,989 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:42,990 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:42,991 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,080 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,081 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,081 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,083 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,084 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,084 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,085 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,086 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,086 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,088 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,089 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,090 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,091 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Menu]   WHERE 1=1  AND (IsEnable=1)    
+
+时间：2017-05-09 19:01:43,092 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,094 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [RoleMenu]   WHERE 1=1  AND  ([RoleId]  = @RoleId101)     
+
+时间：2017-05-09 19:01:43,095 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId101","value":"100002"}] 
+
+时间：2017-05-09 19:01:43,096 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,118 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,119 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,120 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,121 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,122 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,122 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,123 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,124 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,124 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,126 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,126 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:43,127 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:43,131 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Role]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:43,131 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"100002"}] 
+
+时间：2017-05-09 19:01:43,132 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,872 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:50,873 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:50,874 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,875 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:50,875 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:50,876 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,877 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:50,878 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:50,878 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,879 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:50,880 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:50,880 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,890 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:DELETE FROM [RoleMenu] WHERE 1=1  AND  ([RoleId]  = @RoleId1)   
+
+时间：2017-05-09 19:01:50,890 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId1","value":"100002"}] 
+
+时间：2017-05-09 19:01:50,891 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,949 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:insert into [RoleMenu] ([RoleId],[MenuId] ) values(@RoleId,@MenuId);select 'true'; 
+
+时间：2017-05-09 19:01:50,949 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId","value":"100002"},{"key":"@MenuId","value":"1"}] 
+
+时间：2017-05-09 19:01:50,950 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,953 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:insert into [RoleMenu] ([RoleId],[MenuId] ) values(@RoleId,@MenuId);select 'true'; 
+
+时间：2017-05-09 19:01:50,953 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId","value":"100002"},{"key":"@MenuId","value":"2"}] 
+
+时间：2017-05-09 19:01:50,954 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,956 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:insert into [RoleMenu] ([RoleId],[MenuId] ) values(@RoleId,@MenuId);select 'true'; 
+
+时间：2017-05-09 19:01:50,957 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId","value":"100002"},{"key":"@MenuId","value":"19"}] 
+
+时间：2017-05-09 19:01:50,958 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,963 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:insert into [RoleMenu] ([RoleId],[MenuId] ) values(@RoleId,@MenuId);select 'true'; 
+
+时间：2017-05-09 19:01:50,963 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId","value":"100002"},{"key":"@MenuId","value":"3"}] 
+
+时间：2017-05-09 19:01:50,964 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:50,966 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:insert into [RoleMenu] ([RoleId],[MenuId] ) values(@RoleId,@MenuId);select 'true'; 
+
+时间：2017-05-09 19:01:50,966 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@RoleId","value":"100002"},{"key":"@MenuId","value":"16"}] 
+
+时间：2017-05-09 19:01:50,967 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,197 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql: UPDATE [Role] SET  [Name]=@Name  , [Remark]=@Remark  , [SortOrder]=@SortOrder  , [IsEnable]=@IsEnable  , [ModifyTime]=@ModifyTime  WHERE [Id] = @Id 
+
+时间：2017-05-09 19:01:51,198 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id","value":"100002"},{"key":"@Name","value":"111"},{"key":"@Remark","value":""},{"key":"@SortOrder","value":"111"},{"key":"@IsEnable","value":"True"},{"key":"@CreateTime","value":""},{"key":"@ModifyTime","value":"2017/5/9 19:01:50"}] 
+
+时间：2017-05-09 19:01:51,198 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,209 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:51,210 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:51,211 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,213 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:51,214 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:51,214 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,217 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:51,218 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:51,219 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,222 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:51,223 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"2"}] 
+
+时间：2017-05-09 19:01:51,224 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,227 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT COUNT(1)  FROM [Role]   WHERE 1=1  AND (1=1)    
+
+时间：2017-05-09 19:01:51,228 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:51,233 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT * FROM ( SELECT * ,row_index=ROW_NUMBER() OVER(ORDER BY [Id] ASC ) FROM [Role]   WHERE 1=1  AND (1=1)   ) t WHERE t.row_index BETWEEN 1 AND 50 
+
+时间：2017-05-09 19:01:51,233 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:56,841 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([LoginName] = @LoginName101)    
+
+时间：2017-05-09 19:01:56,842 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@LoginName101","value":"test"}] 
+
+时间：2017-05-09 19:01:56,843 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:56,844 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND ([Id] = @Id101)    
+
+时间：2017-05-09 19:01:56,845 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:56,845 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:56,847 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql: UPDATE [Admin] SET  [LastLoginToken]=@LastLoginToken, [LastLoginTime]=@LastLoginTime, [LastLoginIp]=@LastLoginIp WHERE  1=1   AND  ([Id]  = @Id1)   
+
+时间：2017-05-09 19:01:56,851 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id1","value":"3"},{"key":"@LastLoginToken","value":"7uj1hvu10q1ui1h33c5ckch0"},{"key":"@LastLoginTime","value":"2017/5/9 19:01:56"},{"key":"@LastLoginIp","value":"127.0.0.1"}] 
+
+时间：2017-05-09 19:01:56,852 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:56,854 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT T1.*  FROM [Menu]   t1  Inner JOIN [RoleMenu]  t2  ON  ( t1.Id  = t2.MenuId )    Inner JOIN [Admin]  t3  ON  ( t2.RoleId  = t3.RoleId )    WHERE 1=1  AND  ([t3].[Id]  = @t3_Id301)     
+
+时间：2017-05-09 19:01:56,855 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@t3_Id301","value":"3"}] 
+
+时间：2017-05-09 19:01:56,855 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,365 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,366 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,367 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,370 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,371 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,372 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,374 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,376 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,378 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,379 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,380 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,380 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,382 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,382 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,383 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,384 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,385 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,385 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,464 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,465 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,465 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,467 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,467 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,469 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,470 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,471 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,472 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:01:57,474 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:01:57,475 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:01:57,475 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,119 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,120 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,121 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,122 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,123 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,124 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,125 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,126 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,127 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,129 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,129 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,130 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,270 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,271 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,272 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,273 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,274 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,274 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,276 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,276 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,277 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,279 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:00,280 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:00,281 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:00,283 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT * ,row_index=ROW_NUMBER() OVER(ORDER BY [SortOrder] ASC ) FROM [Menu]   WHERE 1=1  AND (1=1)    
+
+时间：2017-05-09 19:02:00,284 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,462 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,464 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,464 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,468 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,468 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,470 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,472 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,472 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,473 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,475 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,476 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,477 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,576 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,576 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,577 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,578 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,579 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,580 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,581 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,581 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,582 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,583 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT *  FROM [Admin]   WHERE 1=1  AND  ([Id]  = @Id101)     
+
+时间：2017-05-09 19:02:50,584 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： pars:[{"key":"@Id101","value":"3"}] 
+
+时间：2017-05-09 19:02:50,585 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,587 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT COUNT(1)  FROM [Role]   WHERE 1=1  AND (1=1)    
+
+时间：2017-05-09 19:02:50,588 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
+时间：2017-05-09 19:02:50,590 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述：sql:SELECT * FROM ( SELECT * ,row_index=ROW_NUMBER() OVER(ORDER BY [Id] ASC ) FROM [Role]   WHERE 1=1  AND (1=1)   ) t WHERE t.row_index BETWEEN 1 AND 50 
+
+时间：2017-05-09 19:02:50,591 
+级别：DEBUG 
+类名：SYDB.DAO.DBContext`1[T].PrintSql  
+描述： 
+
