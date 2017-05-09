@@ -83,13 +83,9 @@
 </script>
 <div class="topPanel">
     <div class="toolbar">
+        @Html.ButtonForUser((List<SYDB.Infrastructure.Authorize.AuthObject.ButtonForAuthorize>)ViewBag.Buttons, (int)ViewBag.MenuId)
         <div class="btn-group">
             <a class="btn btn-primary" onclick="$.reload()"><span class="glyphicon glyphicon-refresh"></span></a>
-        </div>
-        <div class="btn-group">
-            <a id="Add" authorize="yes" class="btn btn-primary dropdown-text" onclick="$.moduleIndex.addModule()"><i class="fa fa-plus"></i>新增</a>
-            <a id="Edit" authorize="yes" class="btn btn-primary dropdown-text" onclick="$.moduleIndex.editModule()"><i class="fa fa-pencil-square-o"></i>修改</a>
-            <a id="Remove" authorize="yes" class="btn btn-primary dropdown-text" onclick="$.moduleIndex.removeModule()"><i class="fa fa-trash-o"></i>删除</a>
         </div>
     </div>
 </div>

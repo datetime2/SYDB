@@ -11,7 +11,7 @@ namespace SYDB.Admin
         {
             string btnClass = "btn btn-default dropdown-text";
             StringBuilder sb = new StringBuilder("<div class='btn-group'>");
-            foreach (var btn in buttons)
+            foreach (var btn in buttons.FindAll(s => s.MenuId == MenuId))
             {
                 sb.AppendFormat("<a id=\"{0}\" class=\"{1}\" onclick=\"{2}\"><i class=\"{3}\"></i>{4}</a>", btn.ButtonId, btnClass ?? btn.ButtonClass, btn.ButtonEvent, btn.ButtonIcon, btn.ButtonName);
             }
