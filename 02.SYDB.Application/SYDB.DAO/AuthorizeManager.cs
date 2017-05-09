@@ -85,9 +85,9 @@ namespace SYDB.DAO
                 LoginName = user.LoginName,
                 UserId = user.Id
             };
-            var menus = MenuDao.GetUserMenus(user.Id);
-            //权限菜单
-            authAdmin.Menus = menus.Where(s => s.ParentId == 0).Select(x => new MenuForAuthorize()
+            var Permissions = MenuDao.GetUserPermission(user.Id);
+            //菜单权限
+            authAdmin.Menus = Permissions.Where(s => s.ParentId == 0 && s.MenuType == MenuType.Menu).Select(x => new MenuForAuthorize()
             {
                 MenuId = x.Id,
                 ParentId = x.ParentId,
@@ -95,7 +95,7 @@ namespace SYDB.DAO
                 MenuUrl = x.Url,
                 MenuIcon = x.Icon,
                 MenuType = x.MenuType,
-                Childs = menus.Where(ss => ss.ParentId.Equals(x.Id)).Select(xx => new MenuForAuthorize
+                Childs = Permissions.Where(ss => ss.ParentId.Equals(x.Id)).Select(xx => new MenuForAuthorize
                 {
                     MenuId = xx.Id,
                     ParentId = xx.ParentId,
@@ -104,6 +104,16 @@ namespace SYDB.DAO
                     MenuIcon = xx.Icon,
                     MenuType = xx.MenuType
                 }).ToList()
+            }).OrderBy(x => x.SortOrder).ToList();
+            //按钮权限
+            authAdmin.Buttons = Permissions.Where(s => s.MenuType == MenuType.Button).Select(s => new ButtonForAuthorize
+            {
+                MenuId = s.ParentId,
+                ButtonId=s.DocumentId,
+                ButtonClass = s.DocumentClass,
+                ButtonEvent = s.DocumentEvent,
+                ButtonIcon = s.Icon,
+                ButtonName = s.Name
             }).OrderBy(x => x.SortOrder).ToList();
             return authAdmin;
         }

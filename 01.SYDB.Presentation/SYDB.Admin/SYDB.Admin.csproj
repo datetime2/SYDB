@@ -725,6 +725,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\HtmlHelperExtend.cs" />
     <Compile Include="Helper\IServiceResolver.cs" />
     <Compile Include="Helper\ServiceResolver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

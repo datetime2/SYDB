@@ -8,8 +8,9 @@ namespace SYDB.Admin.Controllers
         public BaseController()
         {
         }
-        public virtual ActionResult Index()
+        public virtual ActionResult Index(int? menuId)
         {
+            ViewBag.MenuId = menuId.HasValue ? menuId : 0;
             return View();
         }
         public virtual ActionResult Form()

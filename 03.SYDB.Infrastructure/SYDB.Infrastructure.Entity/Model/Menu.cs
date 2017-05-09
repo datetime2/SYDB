@@ -18,6 +18,8 @@ namespace SYDB.Infrastructure.Entity
         public string Icon { get; set; }
         public MenuType MenuType { get; set; }
         public string DocumentId { get; set; }
+        public string DocumentEvent { get; set; }
+        public string DocumentClass { get; set; }
         public int SortOrder { get; set; }
     }
 }

@@ -9,6 +9,8 @@
         public string Icon { get; set; }
         public bool IsEnable { get; set; }
         public string DocumentId { get; set; }
+        public string DocumentEvent { get; set; }
+        public string DocumentClass { get; set; }
         public string MenuType { get; set; }
         public int SortOrder { get; set; }
     }

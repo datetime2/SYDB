@@ -99,10 +99,10 @@
 
 <div class="topPanel">
     <div class="toolbar">
+        @Html.ButtonForUser((List<SYDB.Infrastructure.Authorize.AuthObject.ButtonForAuthorize>)ViewBag.Buttons)
         <div class="btn-group">
             <a class="btn btn-primary" onclick="$.reload()"><span class="glyphicon glyphicon-refresh"></span></a>
         </div>
-        @*@Html.PermissionBtnListFor((List<PH.SAAS.ViewModel.SystemRolePermissionModel>)ViewBag.OperatePermissions)*@
     </div>
 </div>
 <div class="gridPanel">

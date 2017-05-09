@@ -7,6 +7,8 @@
     var keyValue = $.request("keyValue");
     $(function () {
         $("#DocumentId").attr("disabled", true);
+        $("#DocumentClass").attr("disabled", true);
+        $("#DocumentEvent").attr("disabled", true);
         $.moduleFrom.initControl();
         if (!!keyValue) {
             $.moduleFrom.initForm();
@@ -20,21 +22,27 @@
                     change: function(data) {
                         if (data.parentId !== 0 || data.MenuType==0) {
                             $("#Url").attr('disabled', false);
-                            //$("#Icon").attr('disabled', false);
                             $("#DocumentId").attr("disabled", true);
+                            $("#DocumentClass").attr("disabled", true);
+                            $("#DocumentEvent").attr("disabled", true);
                         } else {
                             $("#Url").attr('disabled', true);
-                            //$("#Icon").attr('disabled', true);
                             $("#DocumentId").attr("disabled", false);
+                            $("#DocumentClass").attr("disabled", false);
+                            $("#DocumentEvent").attr("disabled", false);
                         }
                     }
                 });
                 $("#MenuType").on("change", function () {
                     if ($(this).val() == 0) {
                         $("#DocumentId").attr("disabled", true);
+                        $("#DocumentClass").attr("disabled", true);
+                        $("#DocumentEvent").attr("disabled", true);
                     }
                     else {
                         $("#DocumentId").attr("disabled", false);
+                        $("#DocumentClass").attr("disabled", false);
+                        $("#DocumentEvent").attr("disabled", false);
                     }
                 });
             },
@@ -125,6 +133,17 @@
                         <input id="DocumentId" name="DocumentId" type="text" class="form-control" />
                     </td>
                 </tr>
+                <tr>
+                    <th class="formTitle">元素样式</th>
+                    <td class="formValue">
+                        <input id="DocumentClass" name="DocumentClass" type="text" class="form-control" />
+                    </td>
+                    <th class="formTitle">元素事件</th>
+                    <td class="formValue">
+                        <input id="DocumentEvent" name="DocumentEvent" type="text" class="form-control" />
+                    </td>
+                </tr>
+
             </table>
         </div>
     </div>

@@ -11,7 +11,7 @@ namespace SYDB.DAO
 {
     public class MenuDao : BaseDao<Menu>, IMenuDao
     {
-        public List<Menu> GetUserMenus(int adminId)
+        public List<Menu> GetUserPermission(int adminId)
         {
             return DbFunction((db) =>
             {
@@ -104,7 +104,8 @@ namespace SYDB.DAO
                     IsEnable = item.IsEnable,
                     DocumentId = item.DocumentId,
                     MenuType = item.MenuType.ToDescription(),
-                    SortOrder = item.SortOrder
+                    SortOrder = item.SortOrder,
+                    DocumentEvent = item.DocumentEvent
                 });
                 InitTree(item.Id, menuInfos, tree);
             }

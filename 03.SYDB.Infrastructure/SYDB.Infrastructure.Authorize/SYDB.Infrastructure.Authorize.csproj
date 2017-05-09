@@ -45,11 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthObject\MenuForAuthorize.cs" />
-    <Compile Include="AuthObject\PermissionForAuthorize.cs" />
+    <Compile Include="AuthObject\ButtonForAuthorize.cs" />
     <Compile Include="AuthObject\UserForAuthorize.cs" />
     <Compile Include="AuthObject\UserToken.cs" />
     <Compile Include="AuthorizeFilter.cs" />
-    <Compile Include="ButtonForAuthorize.cs" />
     <Compile Include="Exceptions\AuthorizeException.cs" />
     <Compile Include="Interface\IAuthorizeManager.cs" />
     <Compile Include="MenuAttribute.cs" />

@@ -65,7 +65,7 @@
                                                         foreach (var items in item.Childs)
                                                         {
                                                             <li>
-                                                                <a class="menuItem" data-id="@(items.MenuId)" href="@(items.MenuUrl)">@(items.MenuName)</a>
+                                                                <a class="menuItem" data-id="@(items.MenuId)" href="@(items.MenuUrl)?menuId=@(items.MenuId)">@(items.MenuName)</a>
                                                             </li>
                                                         }
                                                     }
