@@ -17,7 +17,7 @@ namespace SYDB.Admin.Controllers
         }
         #region 角色---Role
         [HttpGet]
-        public JsonResult RoleGrid(BaseQuery query)
+        public JsonResult InitGrid(BaseQuery query)
         {
             var grid = RoleDao.InitGrid(query);
             return Json(grid, JsonRequestBehavior.AllowGet);
@@ -29,14 +29,19 @@ namespace SYDB.Admin.Controllers
             return Json(role, JsonRequestBehavior.AllowGet);
         }
         [HttpPost]
-        public JsonResult SubmitForm(Role role, int? keyValue)
+        public JsonResult SubmitForm(Role role, int? keyValue,string menuIds)
         {
-            return RoleDao.SubmitForm(role, keyValue) ? Success("操作成功") : Error("操作失败");
+            return RoleDao.SubmitForm(role, keyValue, menuIds) ? Success("操作成功") : Error("操作失败");
         }
         [HttpPost]
         public JsonResult Remove(int? keyValue)
         {
             return RoleDao.Delete(s => s.Id == keyValue) ? Success("操作成功") : Error("操作失败");
+        }
+        [HttpGet]
+        public JsonResult RoleAuthorize(int? roleId)
+        {
+            return Json(RoleDao.RoleMenu(roleId), JsonRequestBehavior.AllowGet);
         }
         #endregion
     }

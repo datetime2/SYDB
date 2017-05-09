@@ -34,6 +34,15 @@ namespace SYDB.DAO
                 return db.Delete(model);
             });
         }
+
+        public List<T> FindBy(Expression<Func<T, bool>> pride)
+        {
+            return DbFunction((db) =>
+            {
+                return db.Queryable<T>().Where(pride).ToList();
+            });
+        }
+
         /// <summary>
         /// 查询单条
         /// </summary>

@@ -1,15 +1,11 @@
 ﻿using SYDB.IDAO;
 using SYDB.Infrastructure.Entity;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Linq.Expressions;
-using SYDB.Infrastructure.Utility.Helper;
-using SYDB.Infrastructure.Utility.Exceptions;
 using SYDB.Infrastructure.ORM;
 using SYDB.Infrastructure.Utility.ControlHelper;
+using SYDB.Infrastructure.Utility.Exceptions;
+using SYDB.Infrastructure.Utility.Helper;
+using System;
+using System.Linq;
 
 namespace SYDB.DAO
 {
@@ -69,10 +65,6 @@ namespace SYDB.DAO
                     throw new ArgumentException(id.ToString(), "id");
                 return token.EqualsIgnoreCase(user.LastLoginToken);
             });
-        }
-        public bool ValidatePassword(int id, string password)
-        {
-            throw new NotImplementedException();
         }
         public static string EncryptPassword(string password, string passsalt, bool? isMD5 = false)
         {
@@ -138,6 +130,27 @@ namespace SYDB.DAO
                 });
             }
             return grid;
+        }
+        public bool SubmitForm(Admin admin, int? keyValue)
+        {
+            return DbFunction((db) =>
+            {
+                if (keyValue.HasValue)
+                {
+                    db.DisableUpdateColumns = new string[] { "CreateTime", "PassWord", "PassSalt", "LastLoginTime", "LastLoginIp", "LastLoginToken" };
+                    admin.Id = keyValue.Value;
+                    admin.ModifyTime = DateTime.Now;
+                    return db.Update(admin);
+                }
+                else
+                {
+                    var salt= Guid.NewGuid().ToString();
+                    admin.PassSalt = salt;
+                    admin.PassWord = SecurityHelper.Md5(SecurityHelper.Md5(admin.PassWord) + salt);
+                    admin.CreateTime = DateTime.Now;
+                    return db.Insert(admin) != null;
+                }
+            });
         }
     }
 }

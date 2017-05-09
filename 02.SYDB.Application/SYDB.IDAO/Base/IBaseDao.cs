@@ -14,5 +14,6 @@ namespace SYDB.IDAO
         bool Delete(Expression<Func<T, bool>> predi);
         T FirstOrDefault(Expression<Func<T, bool>> predi);
         List<T> Paging(Expression<Func<T, bool>> predi, BaseQuery query);
+        List<T> FindBy(Expression<Func<T, bool>> pride);
     }
 }

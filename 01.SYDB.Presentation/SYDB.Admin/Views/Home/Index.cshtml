@@ -53,7 +53,7 @@
                         <div id="col-left-inner" class="col-left-nano-content">
                             <div class="collapse navbar-collapse navbar-ex1-collapse" id="sidebar-nav">
                                 <ul class="nav nav-pills nav-stacked">
-                                    @if (Model.Any())
+                                    @if (Model!=null && Model.Any())
                                     {
                                         foreach (var item in Model)
                                         {

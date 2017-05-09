@@ -57,11 +57,13 @@
             add: function () {
                 $.modalOpen({
                     id: "Form",
-                    title: "新增角色",
+                    title: "新增管理员",
                     url: "/Admin/Form",
-                    width: "550px",
-                    height: "570px",
-                    btn: null
+                    width: "700px",
+                    height: "400px",
+                    callBack: function (iframeId) {
+                        top.frames[iframeId].$.manageForm.submitForm();
+                    }
                 });
             },
             edit: function () {
@@ -72,11 +74,13 @@
                 }
                 $.modalOpen({
                     id: "Form",
-                    title: "修改角色",
-                    url: "/Admin/InitForm?keyValue=" + keyValue,
-                    width: "550px",
-                    height: "570px",
-                    btn: null
+                    title: "修改管理员",
+                    url: "/Admin/Form?keyValue=" + keyValue,
+                    width: "700px",
+                    height: "440px",
+                    callBack: function (iframeId) {
+                        top.frames[iframeId].$.manageForm.submitForm();
+                    }
                 });
             },
             remove: function () {
@@ -109,15 +113,4 @@
     <table id="grid"></table>
     <div id="gridPager"></div>
 </div>
-<script>
-    function Add() {
-        $.manageIndex.addRole();
-    }
-    function Edit() {
-        $.manageIndex.editRole();
-    }
-    function RemoveEvent() {
-        $.manageIndex.removeRole()
-    }
-</script>
 

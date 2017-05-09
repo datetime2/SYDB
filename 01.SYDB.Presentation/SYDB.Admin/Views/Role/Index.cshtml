@@ -5,13 +5,13 @@
 <script>
     var $grid = $("#grid");
     $(function () {
-        $.manageIndex.initGrid();
+        $.roleIndex.initGrid();
     });
     (function ($) {
-        $.manageIndex = {
+        $.roleIndex = {
             initGrid: function () {
                 $("#grid").dataGrid({
-                    url: "/Role/RoleGrid",
+                    url: "/Role/InitGrid",
                     height: $(window).height() - 128,
                     sortname: "Id",
                     colModel: [
@@ -39,7 +39,7 @@
                     pager: "#gridPager"
                 });
             },
-            add: function () {
+            addRole: function () {
                 $.modalOpen({
                     id: "Form",
                     title: "新增角色",
@@ -49,7 +49,7 @@
                     btn: null
                 });
             },
-            edit: function () {
+            editRole: function () {
                 var keyValue = $("#grid").jqGridRowValue().Id;
                 if (!keyValue) {
                     $.UnChecked();
@@ -58,13 +58,13 @@
                 $.modalOpen({
                     id: "Form",
                     title: "修改角色",
-                    url: "/Role/InitForm?keyValue=" + keyValue,
+                    url: "/Role/Form?keyValue=" + keyValue,
                     width: "550px",
                     height: "570px",
                     btn: null
                 });
             },
-            remove: function () {
+            removeRole: function () {
                 var keyValue = $("#grid").jqGridRowValue().Id;
                 if (!keyValue) {
                     $.UnChecked();

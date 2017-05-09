@@ -31,3 +31,59 @@ System.Data.SqlClient.SqlException (0x80131904): 无法绑定由多个部分组成的标识符 
    在 SYDB.DAO.DBContext`1.DbFunction(Func`2 func, Object def) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 84
 ClientConnectionId:7a0ba35c-08e1-4b06-a82a-a88fb2180d49
 Error Number:4104,State:1,Class:16
+时间：2017-05-09 17:35:17,703 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+时间：2017-05-09 17:35:17,720 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+时间：2017-05-09 17:35:17,809 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+时间：2017-05-09 17:35:21,352 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+时间：2017-05-09 17:35:21,356 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+时间：2017-05-09 17:35:21,359 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54
+时间：2017-05-09 17:35:21,364 
+级别：ERROR 
+类名：SYDB.DAO.DBContext`1[T].DbFunction  
+描述：DBContext.DbFunction 
+
+SYDB.Infrastructure.Utility.Exceptions.DataNotFoundException: 用户不存在
+   在 SYDB.DAO.AdminDao.<>c__DisplayClass1_0.<FindByLoginToken>b__0(ISqlSugarClient db) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\AdminDao.cs:行号 29
+   在 SYDB.DAO.DBContext`1.DbFunction(Func`2 function) 位置 D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\Base\DBContext.cs:行号 54

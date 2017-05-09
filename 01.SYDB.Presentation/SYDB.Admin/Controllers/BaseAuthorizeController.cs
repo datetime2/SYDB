@@ -16,7 +16,7 @@ namespace SYDB.Admin.Controllers
         public BaseAuthorizeController()
         {
             ViewBag.CurrentUser = GetCurrentUser();
-            ViewBag.Buttons = GetCurrentUser().Buttons.Any() ? GetCurrentUser().Buttons : new List<ButtonForAuthorize>();
+            ViewBag.Buttons = GetCurrentUser()!=null ? GetCurrentUser().Buttons : new List<ButtonForAuthorize>();
         }
 
         public ServiceResolver ServiceResolver

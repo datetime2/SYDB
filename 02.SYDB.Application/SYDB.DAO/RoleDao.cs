@@ -38,7 +38,81 @@ namespace SYDB.DAO
             return grid;
         }
 
-        public bool SubmitForm(Role role, int? keyValue)
+        public List<TreeView> RoleMenu(int? roleId)
+        {
+            var tree = new List<TreeView>();
+            var systemMenu = DbFunction((db) =>
+            {
+                return db.Queryable<Menu>().Where(s => s.IsEnable).ToList();
+            }) as List<Menu>;
+            if (roleId.HasValue)
+            {
+                var userMenu = DbFunction((db) =>
+                {
+                    return db.Queryable<RoleMenu>().Where(s => s.RoleId == roleId).ToList();
+                }) as List<RoleMenu>;
+                tree = systemMenu.Where(s => s.ParentId == 0).Select(s => new TreeView
+                {
+                    id = s.Id.ToString(),
+                    value = s.Id.ToString(),
+                    text = s.Name,
+                    checkstate = userMenu.Any(ss => ss.MenuId.Equals(s.Id)) ? 1 : 0,
+                    hasChildren = true,
+                    img = s.Icon,
+                    ChildNodes = systemMenu.Where(p => p.ParentId == s.Id).Select(ss => new TreeView
+                    {
+                        id = ss.Id.ToString(),
+                        text = ss.Name,
+                        checkstate = userMenu.Any(sss => sss.MenuId.Equals(ss.Id)) ? 1 : 0,
+                        hasChildren = true,
+                        img = ss.Icon,
+                        value = ss.Id.ToString(),
+                        ChildNodes = systemMenu.Where(p => p.ParentId == ss.Id).Select(sss => new TreeView
+                        {
+                            id = sss.Id.ToString(),
+                            text = sss.Name,
+                            checkstate = userMenu.Any(ssss => ssss.MenuId.Equals(sss.Id)) ? 1 : 0,
+                            hasChildren = false,
+                            img = sss.Icon,
+                            value = sss.Id.ToString()
+                        }).ToList()
+                    }).ToList()
+                }).ToList();
+            }
+            else
+            {
+                tree = systemMenu.Where(s => s.ParentId == 0).Select(s => new TreeView
+                {
+                    id = s.Id.ToString(),
+                    value = s.Id.ToString(),
+                    text = s.Name,
+                    checkstate = 0,
+                    hasChildren = true,
+                    img = s.Icon,
+                    ChildNodes = systemMenu.Where(p => p.ParentId == s.Id).Select(nodes => new TreeView
+                    {
+                        id = nodes.Id.ToString(),
+                        text = nodes.Name,
+                        checkstate = 0,
+                        hasChildren = true,
+                        img = nodes.Icon,
+                        value = nodes.Id.ToString(),
+                        ChildNodes = systemMenu.Where(p => p.ParentId == nodes.Id).Select(sss => new TreeView
+                        {
+                            id = sss.Id.ToString(),
+                            text = sss.Name,
+                            checkstate = 0,
+                            hasChildren = false,
+                            img = sss.Icon,
+                            value = sss.Id.ToString()
+                        }).ToList()
+                    }).ToList()
+                }).ToList();
+            }
+            return tree;
+        }
+
+        public bool SubmitForm(Role role, int? keyValue, string menuIds)
         {
             return DbFunction((db) =>
             {

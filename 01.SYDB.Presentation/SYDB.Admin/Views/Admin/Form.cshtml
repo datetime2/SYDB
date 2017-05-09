@@ -1,0 +1,101 @@
+﻿@{
+    Layout = "~/Shared/_Form.cshtml";
+}
+@section scripts
+{
+    <script type="text/javascript">
+        var keyValue = $.request("keyValue");
+        $(function () {
+            $.manageForm.initControl();
+        });
+        (function ($) {
+            $.manageForm = {
+                initControl: function () {
+                    $("#RoleId").bindSelect({
+                        url: "/Admin/InitRole",
+                        id: "id",
+                        text: "text",
+                        maxselectlength: 1
+                    });
+                    if (!!keyValue) {
+                        $.ajax({
+                            url: "/Admin/InitForm",
+                            data: { keyValue: keyValue },
+                            dataType: "json",
+                            async: false,
+                            success: function (data) {
+                                $("#form1").formSerialize(data);
+                                $("#PassWord").val("******").attr('disabled', 'disabled');
+                                $('#RoleId').val(data.RoleId).trigger("change");
+                                data.IsEnable ? $('#IsEnabled').attr("checked", "checked") : "";
+                            }
+                        });
+                    }
+                },
+                submitForm: function () {
+                    if (!$('#form1').formValid())
+                        return false;
+                    var postData = $("#form1").formSerialize();
+                    var arry = [];
+                    var reslist = $("#RoleId").select2("data");
+                    $.each(reslist, function (i, v) {
+                        arry.push(v.id);
+                    });
+                    postData["RoleId"] = arry[0];
+                    postData["IsEnable"] = $("input[name='IsEnable']:checked").val() == "on" ? true : false;
+                    postData["Remark"] = $("#Remark").val();
+                    $.submitForm({
+                        url: "/Admin/SubmitForm?keyValue=" + keyValue,
+                        param: postData,
+                        success: function () {
+                            $.currentWindow().$("#grid").trigger("reloadGrid");
+                        }
+                    });
+                }
+            };
+        })(jQuery);
+    </script>
+}
+<form id="form1">
+    <div style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">基本信息</a></li>
+        </ul>
+        <div style="padding-top: 20px; margin-right: 30px;">
+            <table class="form">
+                <tr>
+                    <th class="formTitle">登录账号</th>
+                    <td class="formValue">
+                        <input id="LoginName" name="LoginName" type="text" class="form-control required" placeholder="登录账号" />
+                    </td>
+                    <th class="formTitle">密码</th>
+                    <td class="formValue">
+                        <input id="PassWord" name="PassWord" type="password" class="form-control required" placeholder="请输入密码" />
+                    </td>
+                </tr>
+                <tr>
+                    <th class="formTitle">角色</th>
+                    <td class="formValue">
+                        <select id="RoleId" name="RoleId" class="form-control select2 required"></select>
+                    </td>
+                    <th class="formTitle">允许登录</th>
+                    <td class="formValue" style="padding-top: 1px;">
+                        <div class="ckbox">
+                            <input id="IsEnable" name="IsEnable" type="checkbox"><label for="IsEnable">允许</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="formTitle" valign="top" style="padding-top: 5px;">
+                        备注
+                    </th>
+                    <td class="formValue" colspan="3">
+                        <textarea id="Remark" name="Remark" class="form-control" style="height: 60px;"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</form>
+
+
