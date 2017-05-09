@@ -12,7 +12,7 @@ namespace SqlSugar
     /// ** 描述：IEnumerable扩展类
     /// ** 创始时间：2015-6-9
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public static class IEnumerableExtensions

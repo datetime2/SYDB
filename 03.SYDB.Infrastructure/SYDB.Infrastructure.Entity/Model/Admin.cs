@@ -20,5 +20,6 @@ namespace SYDB.Infrastructure.Entity
         public DateTime? LastLoginTime { get; set; }
         public string LastLoginIp { get; set; }
         public string LastLoginToken { get; set; }
+        public string Remark { get; set; }
     }
 }

@@ -4,6 +4,3 @@ D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\obj\Debug\S
 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\obj\Debug\SYDB.Infrastructure.ORM.pdb
 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\bin\Debug\SYDB.Infrastructure.ORM.dll.config
 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\bin\Debug\MySql.Data.dll
-D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\bin\Debug\Newtonsoft.Json.dll
-D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\bin\Debug\Newtonsoft.Json.xml
-D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.ORM\obj\Debug\SYDB.Infrastructure.ORM.csprojResolveAssemblyReference.cache

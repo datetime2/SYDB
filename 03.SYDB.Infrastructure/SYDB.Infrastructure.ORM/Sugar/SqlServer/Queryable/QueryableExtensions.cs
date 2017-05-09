@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
-using Newtonsoft.Json;
 
 namespace SqlSugar
 {
@@ -15,7 +14,7 @@ namespace SqlSugar
     /// ** 描述：Queryable扩展函数
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：2016-9-19
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public static class QueryableExtensions
@@ -906,7 +905,7 @@ namespace SqlSugar
         /// <returns>json字符串</returns>
         public static string ToJson<T>(this Queryable<T> queryable)
         {
-            return JsonConvert.SerializeObject(ToDataTable<T>(queryable));
+            return JsonConverter.DataTableToJson(ToDataTable<T>(queryable), queryable.DB.SerializerDateFormat);
         }
 
         /// <summary>
@@ -971,7 +970,7 @@ namespace SqlSugar
         /// <returns>dynamic</returns>
         public static dynamic ToDynamic<T>(this Queryable<T> queryable)
         {
-            return JsonConvert.SerializeObject(ToJson<T>(queryable));
+            return JsonConverter.ConvertJson(ToJson<T>(queryable));
         }
 
         /// <summary>

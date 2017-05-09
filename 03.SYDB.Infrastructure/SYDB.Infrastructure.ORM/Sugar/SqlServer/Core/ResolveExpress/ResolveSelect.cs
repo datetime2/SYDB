@@ -11,7 +11,7 @@ namespace SqlSugar
     /// ** 描述：解析Queryable.Select函数的参数
     /// ** 创始时间：2016-9-21
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** qq：610262374 
     /// ** 使用说明：
     /// </summary>

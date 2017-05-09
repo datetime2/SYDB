@@ -37,5 +37,23 @@ namespace SYDB.DAO
             }
             return grid;
         }
+
+        public bool SubmitForm(Role role, int? keyValue)
+        {
+            return DbFunction((db) =>
+            {
+                if (keyValue.HasValue)
+                {
+                    role.Id = keyValue.Value;
+                    role.ModifyTime = DateTime.Now;
+                    return db.Update(role);
+                }
+                else
+                {
+                    role.CreateTime = DateTime.Now;
+                    return db.Insert(role) != null;
+                }
+            });
+        }
     }
 }

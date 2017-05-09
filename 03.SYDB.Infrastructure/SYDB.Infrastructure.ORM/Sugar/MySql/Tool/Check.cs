@@ -9,8 +9,8 @@ namespace MySqlSugar
     /// ** 描述：验证失败，则抛出异常
     /// ** 创始时间：2015-7-19
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
-    /// ** 修改人：www.phsoft.com
+    /// ** 作者：sunkaixuan
+    /// ** 修改人：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public class Check

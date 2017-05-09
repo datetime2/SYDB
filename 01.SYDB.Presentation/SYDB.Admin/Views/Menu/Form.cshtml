@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "MenuForm";
+    ViewBag.Title = "Form";
     Layout = "~/Shared/_Form.cshtml";
 }
 <script>
@@ -15,7 +15,7 @@
         $.moduleFrom = {
             initControl: function () {
                 $("#ParentId").bindSelect({
-                    url: "/System/MenuTree",
+                    url: "/Menu/MenuTree",
                     change: function(data) {
                         if (data.parentId !== 0) {
                             $("#Url").attr('disabled', false);
@@ -29,7 +29,7 @@
             },
             initForm: function () {
                 $.ajax({
-                    url: "/System/MInitForm",
+                    url: "/Menu/InitForm",
                     data: { keyValue: keyValue },
                     dataType: "json",
                     async: false,
@@ -42,9 +42,9 @@
                 if (!$('#form1').formValid())
                     return false;
                 var postdata = $("#form1").formSerialize();
-                postdata["IsEnable"] = $("input[name='IsEnable']:checked").val()=="on" ? 1 : 0;
+                postdata["IsEnable"] = $("input[name='IsEnable']:checked").val() == "on" ? true : false;
                 $.submitForm({
-                    url: "/System/MSubmitForm?keyValue=" + keyValue,
+                    url: "/Menu/SubmitForm?keyValue=" + keyValue,
                     param: postdata,
                     success: function () {
                         $.currentWindow().$("#grid").resetSelection();

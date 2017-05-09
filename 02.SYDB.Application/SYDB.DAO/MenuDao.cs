@@ -72,6 +72,7 @@ namespace SYDB.DAO
             {
                 if (keyValue.HasValue)
                 {
+                    db.DisableUpdateColumns = new string[] { "CreateTime" };
                     menu.Id = keyValue.Value;
                     menu.ModifyTime = DateTime.Now;
                     return db.Update(menu);

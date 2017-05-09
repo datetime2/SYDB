@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using MySql.Data.MySqlClient;
 using System.Data;
-using Newtonsoft.Json;
 
 namespace MySqlSugar
 {
@@ -11,7 +11,7 @@ namespace MySqlSugar
     /// ** 描述：底层SQL辅助函数
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public class SqlHelper : IDisposable
@@ -259,7 +259,7 @@ namespace MySqlSugar
             if (pars != null)
                 MySqlCommand.Parameters.AddRange(pars);
             if (IsGetPageParas)
-            {                
+            {
                 SqlSugarToolExtensions.RequestParasToSqlParameters(MySqlCommand.Parameters);
             }
             int count = MySqlCommand.ExecuteNonQuery();
@@ -452,7 +452,7 @@ namespace MySqlSugar
                     }
                     else
                     {
-                        action(sql, JsonConvert.SerializeObject(pars.Select(s => new { key = s.ParameterName, value = s.Value })));
+                        action(sql, JsonConverter.Serialize(pars.Select(it => new { key = it.ParameterName, value = it.Value })));
                     }
                 }
             }

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Data;
-using Newtonsoft.Json;
 
 namespace SqlSugar
 {
@@ -12,7 +11,7 @@ namespace SqlSugar
     /// ** 描述：底层SQL辅助函数
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public abstract class SqlHelper : IDisposable
@@ -480,7 +479,7 @@ namespace SqlSugar
                     }
                     else
                     {
-                        action(sql, JsonConvert.SerializeObject(pars.Select(it => new { key = it.ParameterName, value = it.Value.ObjToString() })));
+                        action(sql, JsonConverter.Serialize(pars.Select(it => new { key = it.ParameterName, value = it.Value.ObjToString() })));
                     }
                 }
             }

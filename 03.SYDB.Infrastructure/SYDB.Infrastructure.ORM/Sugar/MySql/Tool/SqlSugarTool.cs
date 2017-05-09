@@ -14,7 +14,7 @@ namespace MySqlSugar
     /// ** 描述：SqlSugar工具类
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public partial class SqlSugarTool

@@ -11,7 +11,7 @@
         $.manageIndex = {
             initGrid: function () {
                 $("#grid").dataGrid({
-                    url: "/System/RoleGrid",
+                    url: "/Role/RoleGrid",
                     height: $(window).height() - 128,
                     sortname: "Id",
                     colModel: [
@@ -43,7 +43,7 @@
                 $.modalOpen({
                     id: "Form",
                     title: "新增角色",
-                    url: "/System/RoleForm",
+                    url: "/Role/Form",
                     width: "550px",
                     height: "570px",
                     btn: null
@@ -58,7 +58,7 @@
                 $.modalOpen({
                     id: "Form",
                     title: "修改角色",
-                    url: "/System/RoleForm?keyValue=" + keyValue,
+                    url: "/Role/InitForm?keyValue=" + keyValue,
                     width: "550px",
                     height: "570px",
                     btn: null
@@ -71,7 +71,7 @@
                     return;
                 }
                 $.deleteForm({
-                    url: "/System/RoleRemove",
+                    url: "/Role/Remove",
                     param: { keyValue: keyValue },
                     success: function () {
                         $.currentWindow().$("#grid").trigger("reloadGrid");

@@ -13,9 +13,9 @@ namespace MySqlSugar
     /// ** 描述：实体生成类
     /// ** 创始时间：2015-4-17
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** qq：610262374 欢迎交流,共同提高 ,命名语法等写的不好的地方欢迎大家的给出宝贵建议
-    /// ** 使用说明：http://www.cnblogs.com/www.phsoft.com/p/4482152.html
+    /// ** 使用说明：http://www.cnblogs.com/sunkaixuan/p/4482152.html
     /// </summary>
     public class ClassGenerating
     {

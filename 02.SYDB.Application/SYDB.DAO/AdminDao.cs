@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 using SYDB.Infrastructure.Utility.Helper;
 using SYDB.Infrastructure.Utility.Exceptions;
 using SYDB.Infrastructure.ORM;
+using SYDB.Infrastructure.Utility.ControlHelper;
 
 namespace SYDB.DAO
 {
@@ -92,6 +93,51 @@ namespace SYDB.DAO
                 user.LastLoginIp = "127.0.0.1";
                 db.Update(user);
             });
+        }
+
+        public jqGridPager<AdminRole> InitGrid(BaseQuery query)
+        {
+            var grid = new jqGridPager<AdminRole>()
+            {
+                page = query.page,
+                size = query.rows
+            };
+            var where = PredicateBuilderUtility.True<Admin>();
+            if (!string.IsNullOrEmpty(query.keyword))
+                where = where.And(s => s.LoginName.Contains(query.keyword));
+            total = DbFunction((db) =>
+            {
+                return db.Queryable<Admin>().Where(where).Count();
+            });
+            grid.records = total;
+            if (total > 0)
+            {
+                grid.rows = DbFunction((db) =>
+                {
+                    return db.Queryable<Admin>()
+                    .JoinTable<Role>((t1, t2) => t1.RoleId == t2.Id)
+                    .Where(where)
+                    .OrderBy(t1 => t1.Id)
+                    .Skip((query.page - 1) * query.rows)
+                    .Take(query.rows)
+                    .Select<Role, AdminRole>((t1, t2) => new AdminRole
+                    {
+                        Id = t1.Id,
+                        RoleName = t2.Name,
+                        LoginName = t1.LoginName,
+                        LastLoginIp = t1.LastLoginIp,
+                        LastLoginTime = t1.LastLoginTime,
+                        LastLoginToken = t1.LastLoginToken,
+                        IsEnable = t1.IsEnable,
+                        CreateTime = t1.CreateTime,
+                        ModifyTime = t1.ModifyTime,
+                        RoleId = t2.Id,
+                        Remark=t1.Remark
+                    })
+                    .ToList();
+                });
+            }
+            return grid;
         }
     }
 }

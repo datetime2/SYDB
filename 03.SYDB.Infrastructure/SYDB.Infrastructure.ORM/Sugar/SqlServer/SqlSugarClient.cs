@@ -7,7 +7,6 @@ using System.Reflection;
 using System.Data;
 using System.Linq.Expressions;
 using System.Text.RegularExpressions;
-using Newtonsoft.Json;
 
 namespace SqlSugar
 {
@@ -15,8 +14,8 @@ namespace SqlSugar
     /// ** 描述：SQL糖 ORM 核心类
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
-    /// ** 使用说明：
+    /// ** 作者：sunkaixuan
+    /// ** 使用说明：http://www.cnblogs.com/sunkaixuan/p/4649904.html
     /// </summary>
     public class SqlSugarClient : SqlHelper
     {
@@ -461,7 +460,7 @@ namespace SqlSugar
         /// <returns>动态集合</returns>
         public dynamic SqlQueryDynamic(string sql, object whereObj = null)
         {
-            return JsonConvert.SerializeObject(SqlQueryJson(sql, whereObj));
+            return JsonConverter.ConvertJson(SqlQueryJson(sql, whereObj));
         }
 
         /// <summary>
@@ -472,7 +471,7 @@ namespace SqlSugar
         /// <returns>JSON数据</returns>
         public string SqlQueryJson(string sql, object whereObj = null)
         {
-            return JsonConvert.SerializeObject(GetDataTable(sql, whereObj));
+            return JsonConverter.DataTableToJson(GetDataTable(sql, whereObj), SerializerDateFormat);
         }
 
         /// <summary>

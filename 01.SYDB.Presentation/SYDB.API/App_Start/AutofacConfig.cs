@@ -1,6 +1,8 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using Autofac.Integration.WebApi;
+using SYDB.DAO;
+using SYDB.IDAO;
 using SYDB.Infrastructure.IOC;
 using System.Reflection;
 using System.Web.Http;
@@ -14,19 +16,12 @@ namespace SYDB.API
         public static void initConfig()
         {
             var builder = new ContainerBuilder();
-            var executingAssembly = Assembly.GetExecutingAssembly();
-            builder.RegisterApiControllers(executingAssembly).InstancePerRequest();//注册api容器的实现
-            builder.RegisterControllers(executingAssembly).InstancePerRequest();//注册mvc容器的实现
-
-            builder.RegisterModelBinderProvider();
-            builder.RegisterModule(new AutofacWebTypesModule());
-            builder.RegisterSource(new ViewRegistrationSource());
-            builder.RegisterFilterProvider();
+            builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
+            //builder.RegisterType<GameDao>().As<IGameDao>();
             builder.RegisterModule<IocMoudle>();
             Container = builder.Build();
-
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(Container));
-            GlobalConfiguration.Configuration.DependencyResolver = new AutofacWebApiDependencyResolver(Container);
+            var resolver = new AutofacWebApiDependencyResolver(Container);
+            GlobalConfiguration.Configuration.DependencyResolver = resolver;
         }
     }
 }

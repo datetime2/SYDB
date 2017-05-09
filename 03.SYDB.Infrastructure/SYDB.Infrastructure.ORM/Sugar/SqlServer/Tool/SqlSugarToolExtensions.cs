@@ -12,7 +12,7 @@ namespace SqlSugar
     /// ** 描述：SqlSugar扩展工具类
     /// ** 创始时间：2015-7-19
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public static class SqlSugarToolExtensions

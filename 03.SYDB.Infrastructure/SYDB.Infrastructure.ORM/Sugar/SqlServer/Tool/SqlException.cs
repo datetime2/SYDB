@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +9,7 @@ namespace SqlSugar
     /// ** 描述：SqlSugar自定义异常
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public class SqlSugarException : Exception
@@ -61,7 +60,7 @@ namespace SqlSugar
             var parsStr = string.Empty; ;
             if (pars != null)
             {
-                parsStr = JsonConvert.SerializeObject(pars);
+                parsStr = JsonConverter.Serialize(pars);
             }
             var reval = GetLineMessage("错误信息", message) + GetLineMessage("函数参数", parsStr);
             return reval;
@@ -77,7 +76,7 @@ namespace SqlSugar
             }
             else
             {
-                var reval = GetLineMessage("错误信息         ", message) + GetLineMessage("ORM生成的Sql", sql) + GetLineMessage("函数参数        ", JsonConvert.SerializeObject(pars));
+                var reval = GetLineMessage("错误信息         ", message) + GetLineMessage("ORM生成的Sql", sql) + GetLineMessage("函数参数        ", JsonConverter.Serialize(pars));
                 return reval;
             }
         }

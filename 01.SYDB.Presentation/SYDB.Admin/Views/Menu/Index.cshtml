@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewBag.Title = "Menu";
+    ViewBag.Title = "Index";
     Layout = "~/Shared/_Index.cshtml";
 }
 <script>
@@ -14,7 +14,7 @@
                     treeGrid: true,
                     treeGridModel: "adjacency",
                     ExpandColumn: "Url",
-                    url: "/System/MenuGrid",
+                    url: "/Menu/MenuGrid",
                     height: $(window).height() - 96,
                     colModel: [
                         { label: "主键", name: "Id", hidden: true, key: true },
@@ -37,7 +37,7 @@
                 $.modalOpen({
                     id: "Form",
                     title: "新增模块",
-                    url: "/System/MenuForm",
+                    url: "/Menu/Form",
                     width: "700px",
                     height: "400px",
                     callBack: function (iframeId) {
@@ -54,7 +54,7 @@
                 $.modalOpen({
                     id: "Form",
                     title: "修改模块",
-                    url: "/System/MInitForm?keyValue=" + keyValue,
+                    url: "/Menu/Form?keyValue=" + keyValue,
                     width: "700px",
                     height: "440px",
                     callBack: function (iframeId) {
@@ -68,7 +68,7 @@
                     return;
                 }
                 $.deleteForm({
-                    url: "/System/MenuDel",
+                    url: "/Menu/Remove",
                     param: { keyValue: $("#grid").jqGridRowValue().Id },
                     success: function () {
                         $.currentWindow().$("#grid").resetSelection();

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using MySql.Data.MySqlClient;
-using Newtonsoft.Json;
 
 namespace MySqlSugar
 {
@@ -12,7 +11,7 @@ namespace MySqlSugar
     /// ** 描述：Sqlable扩展函数
     /// ** 创始时间：2015-7-13
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public static partial class SqlableExtensions
@@ -237,7 +236,7 @@ namespace MySqlSugar
         /// <returns></returns>
         public static string SelectToJson(this Sqlable sqlable, string fileds, object whereObj = null)
         {
-            return JsonConvert.SerializeObject(SelectToDataTable(sqlable, fileds, whereObj));
+            return JsonConverter.DataTableToJson(SelectToDataTable(sqlable, fileds, whereObj),sqlable.DB.SerializerDateFormat);
         }
 
         /// <summary>
@@ -249,7 +248,7 @@ namespace MySqlSugar
         /// <returns></returns>
         public static dynamic SelectToDynamic(this Sqlable sqlable, string fileds, object whereObj = null)
         {
-            return JsonConvert.SerializeObject(SelectToJson(sqlable, fileds, whereObj));
+            return JsonConverter.ConvertJson(SelectToJson(sqlable, fileds, whereObj));
         }
 
         /// <summary>
@@ -392,7 +391,7 @@ namespace MySqlSugar
         /// <returns></returns>
         public static string SelectToPageJson(this Sqlable sqlable, string fileds, string orderByFiled, int pageIndex, int pageSize, object whereObj = null) 
         {
-           return  JsonConvert.SerializeObject(SelectToPageTable(sqlable,fileds,orderByFiled,pageIndex,pageSize,whereObj));
+           return  JsonConverter.DataTableToJson(SelectToPageTable(sqlable,fileds,orderByFiled,pageIndex,pageSize,whereObj),sqlable.DB.SerializerDateFormat);
         }
             
         /// <summary>
@@ -407,7 +406,7 @@ namespace MySqlSugar
         /// <returns></returns>
         public static dynamic SelectToPageDynamic(this Sqlable sqlable, string fileds, string orderByFiled, int pageIndex, int pageSize, object whereObj = null) 
         {
-           return  JsonConvert.SerializeObject(SelectToPageJson(sqlable,fileds,orderByFiled,pageIndex,pageSize,whereObj));
+           return  JsonConverter.ConvertJson(SelectToPageJson(sqlable,fileds,orderByFiled,pageIndex,pageSize,whereObj));
         }
 
 

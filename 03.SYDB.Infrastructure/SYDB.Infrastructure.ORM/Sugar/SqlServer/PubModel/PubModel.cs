@@ -9,7 +9,7 @@ namespace SqlSugar
     /// ** 描述：公共参数表
     /// ** 创始时间：2015-7-20
     /// ** 修改时间：-
-    /// ** 作者：www.phsoft.com
+    /// ** 作者：sunkaixuan
     /// ** 使用说明：
     /// </summary>
     public class PubModel

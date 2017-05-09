@@ -1,0 +1,123 @@
+﻿@{
+    ViewBag.Title = "Role";
+    Layout = "~/Shared/_Index.cshtml";
+}
+<script>
+    var $grid = $("#grid");
+    $(function () {
+        $.manageIndex.initGrid();
+    });
+    (function ($) {
+        $.manageIndex = {
+            initGrid: function () {
+                $("#grid").dataGrid({
+                    url: "/Admin/InitGrid",
+                    height: $(window).height() - 128,
+                    sortname: "Id",
+                    colModel: [
+                        { label: "主键", name: "Id", hidden: true, key: true },
+                        { label: '登录账号', name: 'LoginName', width: 150, align: 'left' },
+                        { label: '角色名称', name: 'RoleName', width: 150, align: 'left' },
+                        {
+                            label: '创建时间',
+                            name: 'CreateTime',
+                            width: 80,
+                            align: 'left',
+                            formatter: "date",
+                            formatoptions: { srcformat: 'Y-m-d', newformat: 'Y-m-d' }
+                        },
+                                                {
+                                                    label: '最后登录',
+                                                    name: 'LastLoginTime',
+                                                    width: 80,
+                                                    align: 'left',
+                                                    formatter: "date",
+                                                    formatoptions: { srcformat: 'Y-m-d', newformat: 'Y-m-d' }
+                                                },
+                                                                        {
+                                                                            label: '最后登录IP',
+                                                                            name: 'LastLoginIp',
+                                                                            width: 80,
+                                                                            align: 'left',
+                                                                        },
+                        {
+                            label: "有效",
+                            name: "IsEnable",
+                            width: 60,
+                            align: "center",
+                            formatter: function (cellvalue) {
+                                return cellvalue ? "<i class=\"fa fa-toggle-on\"></i>" : "<i class=\"fa fa-toggle-on\"></i>";
+                            }
+                        },
+                        { label: '备注', name: 'Remark', width: 300, align: 'left' }
+                    ],
+                    pager: "#gridPager"
+                });
+            },
+            add: function () {
+                $.modalOpen({
+                    id: "Form",
+                    title: "新增角色",
+                    url: "/Admin/Form",
+                    width: "550px",
+                    height: "570px",
+                    btn: null
+                });
+            },
+            edit: function () {
+                var keyValue = $("#grid").jqGridRowValue().Id;
+                if (!keyValue) {
+                    $.UnChecked();
+                    return;
+                }
+                $.modalOpen({
+                    id: "Form",
+                    title: "修改角色",
+                    url: "/Admin/InitForm?keyValue=" + keyValue,
+                    width: "550px",
+                    height: "570px",
+                    btn: null
+                });
+            },
+            remove: function () {
+                var keyValue = $("#grid").jqGridRowValue().Id;
+                if (!keyValue) {
+                    $.UnChecked();
+                    return;
+                }
+                $.deleteForm({
+                    url: "/Admin/Remove",
+                    param: { keyValue: keyValue },
+                    success: function () {
+                        $.currentWindow().$("#grid").trigger("reloadGrid");
+                    }
+                });
+            }
+        };
+    })(jQuery);
+</script>
+
+<div class="topPanel">
+    <div class="toolbar">
+        <div class="btn-group">
+            <a class="btn btn-primary" onclick="$.reload()"><span class="glyphicon glyphicon-refresh"></span></a>
+        </div>
+        @*@Html.PermissionBtnListFor((List<PH.SAAS.ViewModel.SystemRolePermissionModel>)ViewBag.OperatePermissions)*@
+    </div>
+</div>
+<div class="gridPanel">
+    <table id="grid"></table>
+    <div id="gridPager"></div>
+</div>
+<script>
+    function Add() {
+        $.manageIndex.addRole();
+    }
+    function Edit() {
+        $.manageIndex.editRole();
+    }
+    function RemoveEvent() {
+        $.manageIndex.removeRole()
+    }
+</script>
+
