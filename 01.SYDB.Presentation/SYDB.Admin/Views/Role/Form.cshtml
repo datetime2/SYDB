@@ -55,6 +55,7 @@
         }
         postData["menuIds"] = menus;
         postData["IsEnable"] = $("input[name='IsEnable']:checked").val() == "on" ? true : false;
+        postData["Remark"] = $("#Remark").val();
         $.submitForm({
             url: "/Role/submitForm?keyValue=" + keyValue,
             param: postData,
@@ -108,7 +109,7 @@
                                 <th class="formTitle" valign="top" style="padding-top: 5px;">备注
                                 </th>
                                 <td class="formValue">
-                                    <textarea id="Description" name="Description" class="form-control" style="height: 60px;"></textarea>
+                                    <textarea id="Remark" name="Remark" class="form-control" style="height: 60px;"></textarea>
                                 </td>
                             </tr>
                         </table>
