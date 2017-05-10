@@ -15,3 +15,4 @@ D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Utility\bin\Deb
 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Utility\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Utility\bin\Debug\Newtonsoft.Json.dll
 D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Utility\bin\Debug\Newtonsoft.Json.xml
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Utility\obj\Debug\SYDB.Infrastructure.Utility.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+D:\MSBuild\SYDB\bin\SYDB.Plugin.Cache.AspNet.dll.config
+D:\MSBuild\SYDB\bin\SYDB.Plugin.Cache.AspNet.dll
+D:\MSBuild\SYDB\bin\SYDB.Plugin.Cache.AspNet.pdb
+D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache.AspNet\obj\Release\SYDB.Plugin.Cache.AspNet.dll
+D:\CodeFile\SYDB\SYDB\04.SYDB.Plugins\SYDB.Plugin.Cache.AspNet\obj\Release\SYDB.Plugin.Cache.AspNet.pdb

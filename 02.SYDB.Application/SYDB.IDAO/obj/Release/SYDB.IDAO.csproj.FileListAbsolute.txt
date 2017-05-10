@@ -1,0 +1,7 @@
+D:\MSBuild\DEV_Metadata\bin\SYDB.IDAO.dll
+D:\MSBuild\DEV_Metadata\bin\SYDB.IDAO.pdb
+D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.IDAO\obj\Release\SYDB.IDAO.csprojResolveAssemblyReference.cache
+D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.IDAO\obj\Release\SYDB.IDAO.dll
+D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.IDAO\obj\Release\SYDB.IDAO.pdb
+D:\MSBuild\SYDB\bin\SYDB.IDAO.dll
+D:\MSBuild\SYDB\bin\SYDB.IDAO.pdb

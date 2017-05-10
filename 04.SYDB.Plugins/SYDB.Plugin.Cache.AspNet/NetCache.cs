@@ -55,7 +55,7 @@ namespace SYDB.Plugin.Cache.AspNet
         {
             SetCallBack(key, value, minutes, isAbsoluteExpiration, (k, v, reason) =>
             {
-                onRemove?.Invoke(k, v, reason.ToString());
+                onRemove.Invoke(k, v, reason.ToString());
             });
         }
         #region private method

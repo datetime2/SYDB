@@ -1,0 +1,9 @@
+D:\MSBuild\DEV_Metadata\bin\SYDB.TaskSchedu.dll.config
+D:\MSBuild\DEV_Metadata\bin\SYDB.TaskSchedu.dll
+D:\MSBuild\DEV_Metadata\bin\SYDB.TaskSchedu.pdb
+D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.TaskSchedu\obj\Release\SYDB.TaskSchedu.csprojResolveAssemblyReference.cache
+D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.TaskSchedu\obj\Release\SYDB.TaskSchedu.dll
+D:\CodeFile\SYDB\SYDB\01.SYDB.Presentation\SYDB.TaskSchedu\obj\Release\SYDB.TaskSchedu.pdb
+D:\MSBuild\SYDB\bin\SYDB.TaskSchedu.dll.config
+D:\MSBuild\SYDB\bin\SYDB.TaskSchedu.dll
+D:\MSBuild\SYDB\bin\SYDB.TaskSchedu.pdb

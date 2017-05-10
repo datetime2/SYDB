@@ -1,0 +1,6 @@
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.UnitTest\obj\Release\SYDB.Infrastructure.UnitTest.csprojResolveAssemblyReference.cache
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.UnitTest.dll.config
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.UnitTest.dll
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.UnitTest.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.UnitTest\obj\Release\SYDB.Infrastructure.UnitTest.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.UnitTest\obj\Release\SYDB.Infrastructure.UnitTest.pdb

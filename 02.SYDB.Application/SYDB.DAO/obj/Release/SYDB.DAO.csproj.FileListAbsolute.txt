@@ -1,0 +1,9 @@
+D:\MSBuild\DEV_Metadata\bin\SYDB.DAO.dll.config
+D:\MSBuild\DEV_Metadata\bin\SYDB.DAO.dll
+D:\MSBuild\DEV_Metadata\bin\SYDB.DAO.pdb
+D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\obj\Release\SYDB.DAO.csprojResolveAssemblyReference.cache
+D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\obj\Release\SYDB.DAO.dll
+D:\CodeFile\SYDB\SYDB\02.SYDB.Application\SYDB.DAO\obj\Release\SYDB.DAO.pdb
+D:\MSBuild\SYDB\bin\SYDB.DAO.dll.config
+D:\MSBuild\SYDB\bin\SYDB.DAO.dll
+D:\MSBuild\SYDB\bin\SYDB.DAO.pdb

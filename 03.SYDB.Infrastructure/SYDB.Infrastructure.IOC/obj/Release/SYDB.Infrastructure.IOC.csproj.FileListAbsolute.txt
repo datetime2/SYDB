@@ -1,0 +1,9 @@
+D:\MSBuild\DEV_Metadata\bin\SYDB.Infrastructure.IOC.dll.config
+D:\MSBuild\DEV_Metadata\bin\SYDB.Infrastructure.IOC.dll
+D:\MSBuild\DEV_Metadata\bin\SYDB.Infrastructure.IOC.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.IOC\obj\Release\SYDB.Infrastructure.IOC.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.IOC\obj\Release\SYDB.Infrastructure.IOC.pdb
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.IOC.dll.config
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.IOC.dll
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.IOC.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.IOC\obj\Release\SYDB.Infrastructure.IOC.csprojResolveAssemblyReference.cache

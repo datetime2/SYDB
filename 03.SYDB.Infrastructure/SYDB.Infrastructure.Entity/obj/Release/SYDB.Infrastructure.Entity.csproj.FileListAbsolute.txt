@@ -1,0 +1,7 @@
+D:\MSBuild\DEV_Metadata\bin\SYDB.Infrastructure.Entity.dll
+D:\MSBuild\DEV_Metadata\bin\SYDB.Infrastructure.Entity.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Entity\obj\Release\SYDB.Infrastructure.Entity.dll
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Entity\obj\Release\SYDB.Infrastructure.Entity.pdb
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.Entity.dll
+D:\MSBuild\SYDB\bin\SYDB.Infrastructure.Entity.pdb
+D:\CodeFile\SYDB\SYDB\03.SYDB.Infrastructure\SYDB.Infrastructure.Entity\obj\Release\SYDB.Infrastructure.Entity.csprojResolveAssemblyReference.cache
