@@ -13,7 +13,6 @@ namespace SYDB.Admin
         {
             var builder = new ContainerBuilder();
             var executingAssembly = Assembly.GetExecutingAssembly();
-            //builder.RegisterApiControllers(executingAssembly).InstancePerRequest();//注册api容器的实现
             builder.RegisterControllers(executingAssembly).InstancePerRequest();//注册mvc容器的实现
             builder.RegisterModelBinderProvider();
             builder.RegisterModule(new AutofacWebTypesModule());
