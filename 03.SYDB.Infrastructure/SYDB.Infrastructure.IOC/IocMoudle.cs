@@ -13,6 +13,7 @@ namespace SYDB.Infrastructure.IOC
             builder.RegisterType<AdminDao>().As<IAdminDao>();
             builder.RegisterType<MenuDao>().As<IMenuDao>();
             builder.RegisterType<RoleDao>().As<IRoleDao>();
+            builder.RegisterType<GameDao>().As<IGameDao>();
         }
     }
 }
