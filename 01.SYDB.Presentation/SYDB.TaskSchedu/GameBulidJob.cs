@@ -19,7 +19,7 @@ namespace SYDB.TaskSchedu
         public void BulidGame()
         {
             Log.Info("开始生成十元夺宝游戏基础数据");
-            var _prefix = DateTime.Today.ToString("yyyyMMdd");
+            var _prefix = DateTime.Today.AddDays(1).ToString("yyyyMMdd");
             List<Game> game = new List<Game>();
             DateTime _now = DateTime.Now;
             for (int hour = 0; hour < 24; hour++)
