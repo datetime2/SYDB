@@ -12,5 +12,9 @@ namespace SYDB.Admin.Controllers
         {
             return View();
         }
+        public ActionResult Rechange()
+        {
+            return View();
+        }
     }
 }

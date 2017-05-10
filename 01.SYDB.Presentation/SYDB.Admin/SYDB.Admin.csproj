@@ -777,6 +777,8 @@
     <Content Include="Views\Admin\Form.cshtml" />
     <Content Include="Views\Role\Form.cshtml" />
     <Content Include="Views\User\Cash.cshtml" />
+    <Content Include="Views\User\Rechange.cshtml" />
+    <Content Include="Views\Game\Bet.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
